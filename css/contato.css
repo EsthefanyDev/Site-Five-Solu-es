@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transform: .2 linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+:root {
+    --cor_principal:#F3FCE7;
+    --cor_fonte:#292828;
+    --verde:#29490A;
+
+}
+.topo-site {
+    display: flex;
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 8%;
+    background-color: var(--cor_principal);
+    z-index: 1000;
+    box-shadow: 0 1rem #29490A;
+}
+nav a {
+    color: var(--cor_fonte);
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin: 0 3rem;
+}
+nav a:hover{
+    color: var(--verde);
+}
+/* fim topo */
+/* inicio form */
+.conteiner-form{
+    width: 500px;
+    background-color: rebeccapurple;
+}
