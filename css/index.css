@@ -13,19 +13,12 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    
 }
 :root {
     --cor_principal:#F3FCE7;
     --cor_fonte:#292828;
     --verde:#29490A;
-
-
-
-
-
-    --cor_teste1:rgb(100, 223, 100);
-    --cor_teste2:rgb(110, 110, 238);
-
 }
 .topo-site {
     display: flex;
@@ -47,6 +40,24 @@ nav a {
     font-weight: 500;
     margin: 0 3rem;
 }
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Cor verde do WhatsApp */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#whatsapp-button:hover {
+    background-color: #20b258;
+}
 nav a:hover{
     color: var(--verde);
     text-decoration: none;
@@ -54,83 +65,144 @@ nav a:hover{
 .banners img{
     margin-top: 10rem;
 }
+
+/* CONHEÇA UM POUCO SOBRE A FIVE SOLUÇÕES */
 .sobre-nos{
-    margin-top: 5rem;
-    padding: 1rem;
+    margin: 2rem;
+    padding:2rem 1rem;
+    background-color:var(--cor_principal); /* Adicionei um fundo leve para destacar a seção */
+    border-radius: 10px; /* Bordas arredondadas para um toque mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
     text-align: center;
-}
-.sobre-nos h2{
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    color: #29490A;
 
 }
+.sobre-nos h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 2.5rem;
+    color: #29490A;
+    margin-bottom: 2rem; /* Ajuste de margem para melhor espaçamento */
+    
+}
 .paragrafo{
+    padding: 1.8rem;
     padding-left: 15rem;
     padding-right: 15rem;
 }
 .paragrafo p{
-    font-size: 2rem;
+    font-size: 2.1rem;
     text-align: justify;
+    line-height: 1.6;
+    color: #333;
 }
-.pq-escolher{
-    background-image: url(/images/background1.png);
-    height: auto;
-    margin-top: 2.5rem;
-    padding: 1rem;
-    text-align: center;
-    
-}
-.pq-escolher h2{
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bold;
+.sobre-nos .btn {
+    display: inline-block; /* Para que o link se comporte como um botão */
+    width: 230px;
+    height: 60px;
+    background-color: #29490A;
     color: white;
-}
-.pq-escolher span{
-    color: white;
+    font-size: 18px;
+    font-weight: bold; 
+    text-align: center;
+    line-height: 50px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 2rem;
 }
 
+.sobre-nos .btn:hover {
+    background-color: #3b6212; 
+    color: white;
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Por que escolher a Five Soluções */
+.pq-escolher {
+    background-image: url(/images/background1.png);
+    background-size: cover;
+    height: auto;
+    padding: 1.6rem;
+    text-align: center;
+}
 
 .pq-escolher h2 {
-    font-size: 24px;
     margin: 26px;
-    text-transform:uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
 }
 
 .pq-escolher .box-container {
     display: flex;
-    justify-content: space-around; 
-    align-items: center; 
-}
-.pq-escolher .box {
-    width: 300px; 
-    height: 450px; 
-    background-color: #f0f0f0; 
-    padding: 2rem;
-    margin: 9px; 
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    border-style:double ;
-    border: 3px solid var(--verde); 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    align-items: stretch;
+    padding: 2rem;
+    gap: 2rem;
 }
 
-.rodape .box-conteiner {
+.pq-escolher .box-container .box {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    margin: 9px;
+    border-style: double;
+    border: 3px solid var(--verde);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 500px; 
+}
+
+.pq-escolher .box-container .box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.pq-escolher .box-container .box h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.pq-escolher .box-container .box p {
+    font-size: 1.8rem;
+    line-height: 1.6; /* Espaçamento entre as linhas para melhor leitura */
+    font-weight: 500;
+}
+
+.pq-escolher span {
+    color: var(--verde);
+}
+
+
+/* Rodapé */
+footer{
+    background-color: rgb(0, 30, 0);
+    text-align: center;
+    padding-top: 2rem;
+}
+.rodape .box-conteiner-rodape {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
     align-items: center;
 }
-.box-conteiner .box h3{
+.box-conteiner-rodape .box h3{
     font-size: 2rem;;
     text-transform: capitalize;
     color: white;
     padding: 1rem ;
     font-weight: bold;
 }
-.box-conteiner .box p{
+.box-conteiner-rodape .box p{
     font-size: 1.7rem;
     color: white;
     padding: .5rem;
@@ -171,36 +243,67 @@ nav a:hover{
  font-size: 16px;
 }
 
-footer{
-    background-color: rgb(0, 19, 0);
-    text-align: center;
-}
-.redes-sociais{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-}
-.redes-sociais a{
-    color: white;
-    border: .1rem solid var(--verde);
-    border-radius: 10%;
-    width: 5rem;
-    height: 5rem;
-    line-height: 4.5rem;
-    text-align: center;
-    font-size: 2rem;
-   
-}
-.redes-sociais a:hover{
-    background-color: var(--verde);
-    color: #fff;
-    text-decoration: none;
-}
-
-.direitos{
-    text-align: center;
-    font-size: 2rem;
-    color: white;
+.direitos {
     padding: 10px;
-    font-weight: 500;
-}   
+    font-size: 16px;
+    color: white;
+}
+
+.direitos p, .direitos h4 {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+.direitos h4 a {
+    color: #1ABC9C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.direitos h4 a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .paragrafo {
+        padding: 1.8rem 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-nos h2 {
+        font-size: 2.4rem;
+    }
+
+    .paragrafo {
+        padding: 1.8rem 2rem;
+    }
+
+    .paragrafo p {
+        font-size: 2rem;
+    }
+
+    .sobre-nos .btn {
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-nos h2 {
+        font-size: 2rem;
+    }
+
+    .paragrafo p {
+        font-size: 2rem;
+    }
+
+    .sobre-nos .btn {
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+}
