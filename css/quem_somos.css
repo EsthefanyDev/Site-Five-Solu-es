@@ -5,40 +5,69 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+:root {
+    --cor_principal: #F3FCE7;
+    --cor_fonte: #292828;
+    --verde: #29490A;
+    --verde-escuro:rgb(0, 30, 0);
+}
+html{
+    background-color: var(--cor_principal);
+    font-family: "Roboto", sans-serif;
+    color:#333;
+    font-size: 10px; /* Base em 10px*/
+}
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 20px; 
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
+#whatsapp-button:hover {
+    background-color: #20b258;
+}
+
+body {
+    /* background-image:url(../images/background4.png); */
+    background-color: var(--cor_principal);
+    background-size: cover;
+    line-height: 1.6;
+}
 header {
-    background-color: #5b9279;
+    background-color: var(--verde);
     color: white;
-    padding: 60px 0;
+    padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-bottom:10px solid var(--verde-escuro); */
 }
-
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 40px;
 }
-
 header p {
-    font-size: 1.2rem;
+    font-size: 19px;
+    color: var(--cor_principal);
 }
 
 section {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 40px auto; 
     padding: 0 20px;
 }
 
-.missao h2, .time-section h2, .valores h2 {
-    font-size: 2.5rem;
+.missao h2,
+.time-section h2,
+.valores h2 {
+    font-size: 40px;
     color: #5b9279;
     text-align: center;
     margin-bottom: 20px;
@@ -48,7 +77,7 @@ section {
 h2::after {
     content: '';
     display: block;
-    width: 100px;
+    width: 100px; 
     height: 4px;
     background-color: #5b9279;
     margin: 10px auto;
@@ -56,14 +85,14 @@ h2::after {
 
 .missao {
     background-color: #fff;
-    padding: 50px;
-    border-radius: 8px;
+    padding: 50px; 
+    border-radius: 8px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .missao p {
-    font-size: 1.2rem;
+    font-size: 19.2px;
     color: #555;
     line-height: 1.8;
 }
@@ -76,17 +105,17 @@ h2::after {
 .time {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 20px; 
     flex-wrap: wrap;
 }
 
 .time-membro {
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 300px;
+    max-width: 300px; 
     transition: transform 0.3s ease;
 }
 
@@ -96,21 +125,21 @@ h2::after {
 
 .time-membro img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 150px; 
+    height: 150px; 
     object-fit: cover;
     margin-bottom: 15px;
     border: 4px solid #5b9279;
 }
 
 .time-membro h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 10px; 
     color: #333;
 }
 
 .time-membro p {
-    font-size: 1rem;
+    font-size: 16px;
     color: #666;
 }
 
@@ -127,80 +156,87 @@ h2::after {
 }
 
 .valores li {
-    font-size: 1.2rem;
+    font-size: 19.2px;
     color: #555;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
+
+/* INÍCIO RODAPÉ */
 
 footer {
-    background-color: #5b9279;
-    color: white;
-    padding: 40px 0;
+    background-color: rgb(0, 30, 0);
     text-align: center;
+    padding-top: 20px;
 }
-
-footer ul {
+.rodape .box-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    align-items: center;
+}
+.box-conteiner .box h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.box-conteiner .box p {
+    font-size: 17px;
+    color: white;
+    padding: 5px; 
+    font-weight: bold;
+}
+.box ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
+    margin-left: 100px; 
+    text-align: left;
 }
-
-footer ul li {
-    margin-bottom: 10px;
+.box ul li {
+    margin: 15px; 
 }
-
-footer a {
+.box ul li a {
     color: white;
+    font-size: 14px;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
 }
-
-footer a:hover {
-    text-decoration: underline;
+.box ul li a:hover {
+    color: rgb(34, 139, 34);
 }
-
-.rodape .box {
-    margin: 20px 0;
+.box img {
+    margin: 10px; 
 }
-
-.rodape .box-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.box h3 {
+    text-transform: capitalize;
+    font-size: 19px; 
+    color: var(--verde);
+    font-weight: 540;
+    margin-bottom: 17px;
 }
-
-.rodape .box img {
-    max-width: 200px;
-    margin-bottom: 20px;
+.box p {
+    text-align: justify;
+    font-size: 16px;
 }
-
-.rodape #whatsapp-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #25d366;
+.direitos {
+    padding: 10px;
+    font-size: 16px; 
     color: white;
-    border-radius: 5px;
+}
+.direitos p, 
+.direitos h4 {
+    margin: 5px 0; 
+    font-weight: normal;
+}
+.direitos h4 a {
+    color: #1ABC9C;
     text-decoration: none;
     font-weight: bold;
 }
-
-.rodape #whatsapp-button:hover {
-    background-color: #1ebd50;
-}
-
-.direitos {
-    background-color: #47614c;
-    padding: 20px;
-}
-
-.direitos p, .direitos h4 {
-    margin-bottom: 10px;
-}
-
-.direitos h4 a {
-    color: #ffd700;
-    text-decoration: none;
-}
-
 .direitos h4 a:hover {
     text-decoration: underline;
 }
+
+/* FIM RODAPÉ */

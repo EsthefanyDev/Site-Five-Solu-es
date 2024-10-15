@@ -2,26 +2,25 @@
     margin: 0;
     padding: 0;   
     box-sizing: border-box; 
-    transform: .2 linear;
 }
 :root {
     --cor_principal:#F3FCE7;
     --cor_fonte:#292828;
     --verde:#29490A;
 }
-html{
+html {
     background-color: var(--cor_principal);
     font-family: "Roboto", sans-serif;
-    color:#333;
-    font-size: 62.5%;
+    color: #333;
+    font-size: 10px; /* Base em 10px*/
 }
 #whatsapp-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 20px; 
     right: 20px;
-    background-color: #25D366; /* Cor verde do WhatsApp */
+    background-color: #25D366;
     color: white;
-    padding: 15px 20px;
+    padding: 15px 20px; 
     border-radius: 50px;
     text-align: center;
     text-decoration: none;
@@ -33,7 +32,7 @@ html{
 #whatsapp-button:hover {
     background-color: #20b258;
 }
-.topo{
+.topo {
     background-color: var(--verde);
     margin: 0;
     display: flex;
@@ -44,18 +43,17 @@ html{
     align-items: center;
     justify-content: center;
 }
-.topo h1{
-    font-size: 3.5rem;
+.topo h1 {
+    font-size: 35px;
     text-align: center;
     color: white;
 }
-.Conteiner-serv{
+.Conteiner-serv {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 20px; 
     padding: 30px;
-   
 }
 .serv {
     background-color: #fff;
@@ -76,21 +74,21 @@ html{
     height: 35%;
 }
 .serv h2 {
-    font-size: 2.2rem;
+    font-size: 22px; 
     color: #29490A;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 0px; 
     background-color: #e0f2f1;
     margin: 0;
 }
 .serv ul {
     list-style-type: none;
-    padding: 10px;
+    padding: 10px; 
     margin: 0;
 }
 .serv ul li {
-    font-size: 1.9em;
-    padding: 8px 0;
+    font-size: 19px; 
+    padding: 8px 0; 
     border-bottom: 1px solid #eee;
 }
 .serv ul li:last-child {
@@ -101,35 +99,35 @@ html{
 }
 
 /* RODAPÉ */
-footer{
+footer {
     background-color: rgb(0, 30, 0);
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 20px;
 }
 .rodape .box-conteiner {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
     align-items: center;
 }
-.box-conteiner .box h3{
-    font-size: 2rem;
+.box-conteiner .box h3 {
+    font-size: 20px;
     text-transform: capitalize;
     color: white;
-    padding: 1rem ;
+    padding: 10px;
     font-weight: bold;
 }
-.box-conteiner .box p{
-    font-size: 1.7rem;
+.box-conteiner .box p {
+    font-size: 17px;
     color: white;
-    padding: .5rem;
+    padding: 5px; 
     font-weight: bold;
 }
 
 .box ul {
     list-style-type: none;
-    padding: 1rem;
-    margin-left: 100px;
+    padding: 10px;
+    margin-left: 100px; 
     text-align: left;
 }
 .box ul li {
@@ -143,32 +141,31 @@ footer{
     transition: color 0.3s;
 }
 .box ul li a:hover {
-    color: rgb(34, 139, 34); /* Cor do link ao passar o mouse */
+    color: rgb(34, 139, 34);
 }
-.box img{
-    margin: 1rem;
+.box img {
+    margin: 10px; 
 }
-.box h3{
+.box h3 {
     text-transform: capitalize;
-    font-size: 19px;
+    font-size: 19px; 
     color: var(--verde);
     font-weight: 540;
-    margin-bottom: 1.7rem;
+    margin-bottom: 17px;
 }
-.box p{
- text-align: justify;
- font-size: 16px;
+.box p {
+    text-align: justify;
+    font-size: 16px;
 }
-
-
 .direitos {
     padding: 10px;
-    font-size: 16px;
+    font-size: 16px; 
     color: white;
 }
 
-.direitos p, .direitos h4 {
-    margin: 5px 0;
+.direitos p, 
+.direitos h4 {
+    margin: 5px 0; 
     font-weight: normal;
 }
 
@@ -181,8 +178,6 @@ footer{
 .direitos h4 a:hover {
     text-decoration: underline;
 }
-
-
 
 @media (max-width: 768px) {
     .Conteiner-serv {

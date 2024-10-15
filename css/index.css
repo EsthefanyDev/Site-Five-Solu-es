@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -9,16 +10,19 @@
     border: none;
     transform: .2 linear;
 }
-html{
-    font-size: 10px; /* O tamanho base em px foi mantido */
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
 :root {
     --cor_principal:#F3FCE7;
     --cor_fonte:#292828;
     --verde:#29490A;
 }
+html{
+    font-size: 10px; /* O tamanho base em px */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* INICIO DA BARRA DE NAVEGAÇÃO SUPERIOR  */
+
 .topo-site {
     display: flex;
     position: fixed;
@@ -52,8 +56,8 @@ nav a {
     font-size: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    
 }
-
 #whatsapp-button:hover {
     background-color: #20b258;
 }
@@ -61,20 +65,23 @@ nav a:hover{
     color: var(--verde);
     text-decoration: none;
 }
-.banners img{
-    margin-top: 100px;
+ion-icon {
+    font-size: 40px;
+  
 }
 
-/* CONHEÇA UM POUCO SOBRE A FIVE SOLUÇÕES */
+
+/* FIM DA BARRA DE NAVEGAÇÃO SUPERIOR  */
+/* INÍCIO "SOBRE NÓS" */
+
 .sobre-nos {
-    margin: 20px; /* Margem ao redor da seção */
-    padding: 15px; /* Espaço interno na seção */
-    background-color: var(--cor_principal); /* Cor de fundo */
+    margin: 20px; 
+    padding: 15px; 
+    background-color: var(--cor_principal); 
     border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    text-align: center; /* Centraliza o texto dentro da seção */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
 }
-
 .sobre-nos h2 {
     font-size: 29px;
     font-weight: bold;
@@ -82,47 +89,48 @@ nav a:hover{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     margin: 20px;
 }
-
 .sobre-nos p {
-    font-size: 24px; 
+    font-size: 20px; 
     text-align: justify;
     line-height: 1.7;
     color: #333;
     padding:10px 30px;
     margin: 30px; 
 }
-
 .highlight {
-    color: #20b258; /* Cor para destacar partes do texto */
+    color: #20b258;
 }
-
+.sobre-nos .btn ion-icon{
+    font-size: 20px;
+    margin-right: 10px;
+}
 .sobre-nos .btn {
-    display: inline-flex; /* Usar inline-flex para centralizar o ícone e o texto */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    width: 230px; /* Largura do botão */
-    height: 50px; /* Altura do botão */
-    background-color: #29490A; /* Cor de fundo do botão */
-    border: 2px solid #29490A; /* Bordas do botão */
-    color: white; /* Cor do texto do botão */
-    font-size: 18px; /* Tamanho da fonte */
-    font-weight: bold; /* Peso da fonte */
-    text-decoration: none; /* Remove sublinhado do link */
-    border-radius: 5px; /* Bordas arredondadas do botão */
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Animações para hover */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px; 
+    height: 50px; 
+    background-color: #29490A; 
+    border: 2px solid #29490A; 
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
     margin-bottom: 20px;
 }
-
 .sobre-nos .btn:hover {
-    background-color: transparent; /* Cor de fundo ao passar o mouse */
-    transform: translateY(-3px); /* Leve movimento para cima ao passar o mouse */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada ao passar o mouse */
-    color: #29490A; /* Muda a cor do texto ao passar o mouse */
+    background-color: transparent; 
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    color: #29490A; 
 }
 
+/* FIM "SOBRE NÓS"  */
+/* INÍCIO "POR QUE ESCOLHER A FIVE" */
 
-/* Por que escolher a Five Soluções */
 .pq-escolher {
     background-image: url(/images/background1.png);
     background-size: cover;
@@ -130,7 +138,6 @@ nav a:hover{
     padding: 16px;
     text-align: center;
 }
-
 .pq-escolher h2 {
     margin: 26px;
     font-size: 30px;
@@ -138,7 +145,6 @@ nav a:hover{
     color: white;
     text-transform: uppercase;
 }
-
 .pq-escolher .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -147,8 +153,7 @@ nav a:hover{
     align-items: stretch;
     gap: 10px;
 }
-
-.pq-escolher .box-container .box {
+.pq-escolher .box-container .box1 {
     width: 100%;
     max-width: 330px;
     height: auto;
@@ -161,105 +166,122 @@ nav a:hover{
     text-align: center;
     min-height: 500px; 
 }
-
-.pq-escolher .box-container .box img {
+.pq-escolher .box-container .box1 img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
-
-.pq-escolher .box-container .box h3 {
+.pq-escolher .box-container .box1 h3 {
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: bold;
 }
-
-.pq-escolher .box-container .box p {
+.pq-escolher .box-container .box1 p {
     font-size: 18px;
     line-height: 1.6;
     font-weight: 500;
 }
 
-/* Rodapé */
-footer{
+/* FIM "POR QUE ESCOLHER A FIVE" */
+/* INÍCIO RODAPÉ */
+
+footer {
     background-color: rgb(0, 30, 0);
     text-align: center;
     padding-top: 20px;
 }
+
+/* Seção do rodapé */
 .rodape .box-conteiner-rodape {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     align-items: center;
 }
-.box-conteiner-rodape .box h3{
-    font-size: 20px;
-    text-transform: capitalize;
-    color: white;
-    padding: 10px ;
-    font-weight: bold;
-}
-.box-conteiner-rodape .box p{
-    font-size: 17px;
-    color: white;
-    padding: 5px;
-    font-weight: bold;
+
+/* Estilo para cada box no rodapé */
+.box-conteiner-rodape .box {
+    color: white; /* cor do texto para todos os elementos dentro da box */
 }
 
+/* Estilos específicos para a lista */
 .box ul {
     list-style-type: none;
     padding: 10px;
-    margin-left: 100px;
+    margin-left: 100px; /* Pode ser removido se a centralização for desejada */
     text-align: left;
 }
+
 .box ul li {
     margin: 15px; 
 }
+
 .box ul li a {
-    color: white;
+    color: white; /* Cor dos links */
     font-size: 14px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
-}
-.box ul li a:hover {
-    color: forestgreen;
-}
-.box img{
-    margin: 10px;
-}
-.box h3{
-    text-transform: capitalize;
-    font-size: 19px;
-    color: var(--verde);
-    font-weight: 540;
-    margin-bottom: 17px;
-}
-.box p{
- text-align: justify;
- font-size: 16px;
+    transition: color 0.3s; 
 }
 
+.box ul li a:hover {
+    color: forestgreen; 
+}
+
+/* Estilo para o título e parágrafos no box de detalhes de contato */
+.box-conteiner-rodape .box h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px;
+}
+.box p {
+    font-size: 18px; 
+    margin: 10px 0; 
+}
+.box p a {
+    /* Estilo dos links */
+    color: var(--cor_principal);
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+.box p a:hover {
+    color: forestgreen;
+}
+.box i {
+    margin-right: 8px;
+}
+
+/* Estilo para imagens */
+.box img {
+    margin: 10px; /* Margem da imagem */
+}
+
+/* Seção de direitos autorais */
 .direitos {
     padding: 10px;
     font-size: 16px;
-    color: white;
+    color: white; /* Cor do texto no rodapé */
 }
 
-.direitos p, .direitos h4 {
-    margin: 5px 0;
-    font-weight: normal;
+.direitos p,
+.direitos h4 {
+    margin: 5px 0; /* Margem uniforme para p e h4 */
+    font-weight: normal; /* Peso da fonte normal */
 }
 
 .direitos h4 a {
-    color: #1ABC9C;
+    color: #1ABC9C; /* Cor do link em h4 */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bold; /* Peso da fonte em negrito */
 }
 
 .direitos h4 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
+
+
+/* FIM RODAPÉ */
 
 /* Responsividade */
 @media (max-width: 1024px) {
