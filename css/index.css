@@ -10,10 +10,9 @@
     transform: .2 linear;
 }
 html{
-    font-size: 62.5%;
+    font-size: 10px; /* O tamanho base em px foi mantido */
     overflow-x: hidden;
     scroll-behavior: smooth;
-    
 }
 :root {
     --cor_principal:#F3FCE7;
@@ -29,22 +28,22 @@ html{
     right: 0;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 8%;
+    padding: 10px 80px;
     background-color: var(--cor_principal);
     z-index: 1000;
-    box-shadow: 0 1rem #29490A;
+    box-shadow: 0 10px #29490A;
 }
 nav a {
     color: var(--cor_fonte);
-    font-size: 1.9rem;
+    font-size: 19px;
     font-weight: 500;
-    margin: 0 3rem;
+    margin: 0 30px;
 }
 #whatsapp-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25D366; /* Cor verde do WhatsApp */
+    background-color: #25D366;
     color: white;
     padding: 15px 20px;
     border-radius: 50px;
@@ -63,74 +62,78 @@ nav a:hover{
     text-decoration: none;
 }
 .banners img{
-    margin-top: 10rem;
+    margin-top: 100px;
 }
 
 /* CONHEÇA UM POUCO SOBRE A FIVE SOLUÇÕES */
-.sobre-nos{
-    margin: 2rem;
-    padding:2rem 1rem;
-    background-color:var(--cor_principal); /* Adicionei um fundo leve para destacar a seção */
-    border-radius: 10px; /* Bordas arredondadas para um toque mais suave */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
-    text-align: center;
+.sobre-nos {
+    margin: 20px; /* Margem ao redor da seção */
+    padding: 15px; /* Espaço interno na seção */
+    background-color: var(--cor_principal); /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center; /* Centraliza o texto dentro da seção */
+}
 
-}
-.sobre-nos h2{
-    font-size: 2.8rem;
+.sobre-nos h2 {
+    font-size: 29px;
     font-weight: bold;
-    margin: 2.5rem;
     color: #29490A;
-    margin-bottom: 2rem; /* Ajuste de margem para melhor espaçamento */
-    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
-.paragrafo{
-    padding: 1.8rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-}
-.paragrafo p{
-    font-size: 2.1rem;
+
+.sobre-nos p {
+    font-size: 24px; 
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.7;
     color: #333;
+    padding:10px 30px;
+    margin: 30px; 
 }
+
+.highlight {
+    color: #20b258; /* Cor para destacar partes do texto */
+}
+
 .sobre-nos .btn {
-    display: inline-block; /* Para que o link se comporte como um botão */
-    width: 230px;
-    height: 60px;
-    background-color: #29490A;
-    color: white;
-    font-size: 18px;
-    font-weight: bold; 
-    text-align: center;
-    line-height: 50px; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 2rem;
+    display: inline-flex; /* Usar inline-flex para centralizar o ícone e o texto */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    width: 230px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    background-color: #29490A; /* Cor de fundo do botão */
+    border: 2px solid #29490A; /* Bordas do botão */
+    color: white; /* Cor do texto do botão */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    text-decoration: none; /* Remove sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Animações para hover */
+    margin-bottom: 20px;
 }
 
 .sobre-nos .btn:hover {
-    background-color: #3b6212; 
-    color: white;
-    transform: translateY(-3px); 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: transparent; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-3px); /* Leve movimento para cima ao passar o mouse */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada ao passar o mouse */
+    color: #29490A; /* Muda a cor do texto ao passar o mouse */
 }
+
 
 /* Por que escolher a Five Soluções */
 .pq-escolher {
     background-image: url(/images/background1.png);
     background-size: cover;
     height: auto;
-    padding: 1.6rem;
+    padding: 16px;
     text-align: center;
 }
 
 .pq-escolher h2 {
     margin: 26px;
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -142,8 +145,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     align-items: stretch;
-    padding: 2rem;
-    gap: 2rem;
+    gap: 10px;
 }
 
 .pq-escolher .box-container .box {
@@ -151,7 +153,7 @@ nav a:hover{
     max-width: 330px;
     height: auto;
     background-color: #f0f0f0;
-    padding: 2rem;
+    padding: 20px;
     margin: 9px;
     border-style: double;
     border: 3px solid var(--verde);
@@ -167,51 +169,46 @@ nav a:hover{
 }
 
 .pq-escolher .box-container .box h3 {
-    font-size: 2rem;
+    font-size: 20px;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
 .pq-escolher .box-container .box p {
-    font-size: 1.8rem;
-    line-height: 1.6; /* Espaçamento entre as linhas para melhor leitura */
+    font-size: 18px;
+    line-height: 1.6;
     font-weight: 500;
 }
-
-.pq-escolher span {
-    color: var(--verde);
-}
-
 
 /* Rodapé */
 footer{
     background-color: rgb(0, 30, 0);
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 20px;
 }
 .rodape .box-conteiner-rodape {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     align-items: center;
 }
 .box-conteiner-rodape .box h3{
-    font-size: 2rem;;
+    font-size: 20px;
     text-transform: capitalize;
     color: white;
-    padding: 1rem ;
+    padding: 10px ;
     font-weight: bold;
 }
 .box-conteiner-rodape .box p{
-    font-size: 1.7rem;
+    font-size: 17px;
     color: white;
-    padding: .5rem;
+    padding: 5px;
     font-weight: bold;
 }
 
 .box ul {
     list-style-type: none;
-    padding: 1rem;
+    padding: 10px;
     margin-left: 100px;
     text-align: left;
 }
@@ -226,17 +223,17 @@ footer{
     transition: color 0.3s;
 }
 .box ul li a:hover {
-    color: forestgreen; /* Cor do link ao passar o mouse */
+    color: forestgreen;
 }
 .box img{
-    margin: 1rem;
+    margin: 10px;
 }
 .box h3{
     text-transform: capitalize;
     font-size: 19px;
     color: var(--verde);
     font-weight: 540;
-    margin-bottom: 1.7rem;
+    margin-bottom: 17px;
 }
 .box p{
  text-align: justify;
@@ -267,21 +264,21 @@ footer{
 /* Responsividade */
 @media (max-width: 1024px) {
     .paragrafo {
-        padding: 1.8rem 8rem;
+        padding: 18px 80px;
     }
 }
 
 @media (max-width: 768px) {
     .sobre-nos h2 {
-        font-size: 2.4rem;
+        font-size: 24px;
     }
 
     .paragrafo {
-        padding: 1.8rem 2rem;
+        padding: 18px 20px;
     }
 
     .paragrafo p {
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     .sobre-nos .btn {
@@ -294,11 +291,11 @@ footer{
 
 @media (max-width: 480px) {
     .sobre-nos h2 {
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     .paragrafo p {
-        font-size: 2rem;
+        font-size: 20px;
     }
 
     .sobre-nos .btn {
