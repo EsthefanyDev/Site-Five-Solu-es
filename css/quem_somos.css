@@ -10,157 +10,322 @@
     --cor_fonte: #292828;
     --verde: #29490A;
     --verde-escuro:rgb(0, 30, 0);
+    --sombra-leve: 0 4px 20px rgba(0, 0, 0, 0.2);
+    --transicao-padrao: all 0.3s ease-in-out;
 }
 html{
     background-color: var(--cor_principal);
     font-family: "Roboto", sans-serif;
     color:#333;
     font-size: 10px; /* Base em 10px*/
+    
+}
+body{
+    animation: fade-in 1s forwards;
+    background-size: cover;
+    line-height: 1.6;
+    background-image: url(/images/background3.png);
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 #whatsapp-button {
     position: fixed;
+
     bottom: 20px;
     right: 20px;
     background-color: #25D366;
     color: white;
     padding: 15px 20px; 
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
-
 #whatsapp-button:hover {
     background-color: #20b258;
 }
-
-body {
-    /* background-image:url(../images/background4.png); */
-    background-color: var(--cor_principal);
-    background-size: cover;
-    line-height: 1.6;
+ion-icon{
+    font-size: 40px;
 }
-header {
+
+/* CABEÇALHO */
+.main-header {
     background-color: var(--verde);
-    color: white;
     padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* border-bottom:10px solid var(--verde-escuro); */
+    box-shadow: var(--sombra-leve);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
-header h1 {
-    font-size: 40px;
-}
-header p {
-    font-size: 19px;
-    color: var(--cor_principal);
-}
-
-section {
-    max-width: 1200px;
-    margin: 40px auto; 
-    padding: 0 20px;
-}
-
-.missao h2,
-.time-section h2,
-.valores h2 {
-    font-size: 40px;
-    color: #5b9279;
-    text-align: center;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-h2::after {
-    content: '';
-    display: block;
-    width: 100px; 
-    height: 4px;
-    background-color: #5b9279;
-    margin: 10px auto;
-}
-
-.missao {
-    background-color: #fff;
-    padding: 50px; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.missao p {
-    font-size: 19.2px;
-    color: #555;
-    line-height: 1.8;
-}
-
-.time-section {
-    background-color: #f9fbfd;
-    padding: 60px 0;
-}
-
-.time {
+.container {
     display: flex;
-    justify-content: space-around;
-    gap: 20px; 
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
-
-.time-membro {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 300px; 
+.navbar ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.nav-list li a {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: var(--transicao-padrao);
+}
+.nav-list li a:hover,
+.nav-list li a.active {
+    color: #1ABC9C;
+}
+.logo-img {
+    max-width: 120px;
     transition: transform 0.3s ease;
 }
-
-.time-membro:hover {
-    transform: translateY(-10px);
+.logo-img:hover {
+    transform: scale(1.05);
 }
 
-.time-membro img {
-    border-radius: 50%;
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 4px solid #5b9279;
-}
-
-.time-membro h3 {
-    font-size: 24px;
-    margin-bottom: 10px; 
-    color: #333;
-}
-
-.time-membro p {
-    font-size: 16px;
-    color: #666;
-}
-
-.valores {
-    background-color: #fff;
-    padding: 50px;
-    border-radius: 8px;
+/* BANNER */
+.banner {
+    
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+.banner-content h1 {
+    font-size: 48px;
+    color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fade-in-title 1s ease-out;
+}
+.banner-content p {
+    font-size: 24px;
+    color: #f3fce7;
+    margin-top: 10px;
+    animation: fade-in-text 1.5s ease-out;
+}
+@keyframes fade-in-title {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-text {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* INÍCIO "NOSSA MISSÃO" */
+
+.missao-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    border: 2px solid var(--verde);
+    margin: 10px 58px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap; /* Permite que os elementos se ajustem ao espaço */
+}
+
+.missao-container {
+    flex: 1;
+    padding: 40px;
+}
+
+.missao-titulo {
+    font-size: 34px;
+    color: var(--verde);
+}
+
+.divisor {
+    width: 250px;
+    height: 2px;
+    background-color: var(--verde);
+    border: none;
+    margin: 10px 0 30px;
+}
+
+.missao-texto {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--cor_fonte);
+    text-align: justify;
+    margin-right: 10px;
+}
+
+.missao-image {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: -4.5px;
+    flex: 1;
+}
+
+.missao-image img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* FIM "NOSSA MISSÃO" */
+
+/* INÍCIO "CONHEÇA NOSSA EQUIPE" */
+
+.time-section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.time-section h2 {
+    font-size: 35px;
+    margin-top: 20px;
+    color: var(--cor_principal);
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Container dos membros com espaçamento entre os itens */
+.membro-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+}
+
+/* Cada membro com layout responsivo e imagem ao lado */
+.membro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    padding: 0px;
+    background-color: #fff;
+    border: 2px solid var(--verde);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    
 }
 
-.valores ul {
-    list-style-type: none;
+/* Alterna o layout para os membros pares */
+.membro:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
-.valores li {
-    font-size: 19.2px;
-    color: #555;
-    margin-bottom: 10px; 
+/* Estilos do conteúdo de texto */
+.membro-content {
+    width: 50%;
+    margin: auto;
+}
+.text-content{
+    width: auto;
+}
+.text-content h3 {
+    font-size: 32px;
+    color: var(--verde);
+    margin-bottom: 5px;
 }
 
+.text-content p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.text-content ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.text-content ul li a {
+    font-size: 34px;
+    color: var(--verde);
+    transition: color 0.3s ease;
+}
+
+.text-content ul li a:hover {
+    color:forestgreen;
+}
+
+/* Imagem redonda e centralizada */
+.membro-image {
+    width: 35%;
+    height: 490px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 20px 40px;
+    transition: transform 0.3s ease;
+  
+}
+
+.membro-image:hover {
+    transform: scale(1.05);
+}
+
+/* FIM "CONHEÇA NOSSA EQUIPE" */
+
+
+
+/* INÍCIO "NOSSOS VALORES" */
+.valores {
+    position: relative;
+    margin: 50px auto;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.valores h2 {
+    font-size: 36px;
+    color: var(--cor_principal);
+    text-shadow: var(--sombra-leve);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta o número de colunas conforme o tamanho da tela */
+    gap: 30px; /* Espaço entre os itens */
+}
+
+.valor-item {
+    background: rgba(36, 58, 39, 0.452); /* Fundo escuro transparente */
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    color: #fff;
+    font-size: 18px;
+}
+
+.valor-item:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    background: rgba(0, 0, 0, 0.6); /* Escurece mais ao passar o mouse */
+}
+
+.valor-item strong {
+    display: block; /* Força uma nova linha para o texto do valor */
+    color: var(--cor_principal);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* FIM "NOSSOS VALORES" */
 /* INÍCIO RODAPÉ */
 
 footer {
@@ -168,25 +333,22 @@ footer {
     text-align: center;
     padding-top: 20px;
 }
-.rodape .box-conteiner {
+/* Seção do rodapé */
+.rodape{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.rodape .box-conteiner-rodape {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     align-items: center;
 }
-.box-conteiner .box h3 {
-    font-size: 20px;
-    text-transform: capitalize;
-    color: white;
-    padding: 10px;
-    font-weight: bold;
+/* Estilo para cada box no rodapé */
+.box-conteiner-rodape .box {
+    color: white; 
 }
-.box-conteiner .box p {
-    font-size: 17px;
-    color: white;
-    padding: 5px; 
-    font-weight: bold;
-}
+/* Estilos específicos para a lista */
 .box ul {
     list-style-type: none;
     padding: 10px;
@@ -197,46 +359,93 @@ footer {
     margin: 15px; 
 }
 .box ul li a {
-    color: white;
-    font-size: 14px;
+    color: white; /* Cor dos links */
+    font-size: 16px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s; 
 }
 .box ul li a:hover {
-    color: rgb(34, 139, 34);
+    color: forestgreen; 
 }
+/* Estilo para o título e parágrafos no box de detalhes de contato */
+.box-conteiner-rodape .box h3 {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px;
+}
+.box p {
+    font-size: 16px; 
+    margin: 10px 0; 
+}
+.box p a {
+    /* Estilo dos links */
+    color: var(--cor_principal);
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+.box p a:hover {
+    color: forestgreen;
+}
+.box i {
+    margin-right: 8px;
+}
+/* Estilo para imagens */
 .box img {
     margin: 10px; 
 }
-.box h3 {
-    text-transform: capitalize;
-    font-size: 19px; 
-    color: var(--verde);
-    font-weight: 540;
-    margin-bottom: 17px;
-}
-.box p {
-    text-align: justify;
-    font-size: 16px;
-}
+/* Seção de direitos autorais */
 .direitos {
     padding: 10px;
-    font-size: 16px; 
-    color: white;
+    font-size: 14px;
+    color: white; 
+    background-color: var(--verde);
 }
-.direitos p, 
+.direitos p,
 .direitos h4 {
     margin: 5px 0; 
-    font-weight: normal;
+    font-weight: normal; 
 }
 .direitos h4 a {
-    color: #1ABC9C;
+    color: #1ABC9C; 
     text-decoration: none;
-    font-weight: bold;
+    
 }
 .direitos h4 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 
 /* FIM RODAPÉ */
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .missao-section {
+        flex-direction: column; /* Coloca a imagem abaixo do texto em telas menores */
+        align-items: flex-start; /* Alinha os itens ao topo */
+    }
+
+    .missao-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .missao-image {
+        max-width: 100%;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .missao-titulo {
+        font-size: 28px; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .missao-texto {
+        font-size: 16px; /* Ajuste do tamanho do texto */
+    }
+
+    .divisor {
+        width: 150px; /* Reduz o tamanho do divisor */
+    }
+}

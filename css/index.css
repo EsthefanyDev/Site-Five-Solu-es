@@ -72,6 +72,10 @@ ion-icon {
 
 
 /* FIM DA BARRA DE NAVEGAÇÃO SUPERIOR  */
+
+.carousel{
+    margin-top: 10px;
+}
 /* INÍCIO "SOBRE NÓS" */
 
 .sobre-nos {
@@ -87,18 +91,19 @@ ion-icon {
     font-weight: bold;
     color: #29490A;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    margin: 20px;
+    margin: 25px;
 }
 .sobre-nos p {
     font-size: 20px; 
     text-align: justify;
     line-height: 1.7;
     color: #333;
-    padding:10px 30px;
+    padding:10px 80px;
     margin: 30px; 
 }
 .highlight {
     color: #20b258;
+    
 }
 .sobre-nos .btn ion-icon{
     font-size: 20px;
@@ -135,7 +140,7 @@ ion-icon {
     background-image: url(/images/background1.png);
     background-size: cover;
     height: auto;
-    padding: 16px;
+    padding: 12px;
     text-align: center;
 }
 .pq-escolher h2 {
@@ -151,20 +156,24 @@ ion-icon {
     justify-content: center;
     align-items: center;
     align-items: stretch;
-    gap: 10px;
+    gap: 25px;
 }
 .pq-escolher .box-container .box1 {
     width: 100%;
     max-width: 330px;
     height: auto;
     background-color: #f0f0f0;
-    padding: 20px;
-    margin: 9px;
+    padding: 18px;
+    margin: 10px;
     border-style: double;
     border: 3px solid var(--verde);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     min-height: 500px; 
+    transition: background-color 0.3s, transform 0.4s;
+}
+.pq-escolher .box-container .box1:hover{
+    transform: translateY(-5px);
 }
 .pq-escolher .box-container .box1 img {
     max-width: 100%;
@@ -180,6 +189,8 @@ ion-icon {
     font-size: 18px;
     line-height: 1.6;
     font-weight: 500;
+    font-size: 18px;
+    text-align: justify;
 }
 
 /* FIM "POR QUE ESCOLHER A FIVE" */
@@ -201,14 +212,14 @@ footer {
 
 /* Estilo para cada box no rodapé */
 .box-conteiner-rodape .box {
-    color: white; /* cor do texto para todos os elementos dentro da box */
+    color: white; 
 }
 
 /* Estilos específicos para a lista */
 .box ul {
     list-style-type: none;
     padding: 10px;
-    margin-left: 100px; /* Pode ser removido se a centralização for desejada */
+    margin-left: 100px; 
     text-align: left;
 }
 
@@ -218,7 +229,7 @@ footer {
 
 .box ul li a {
     color: white; /* Cor dos links */
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s; 
@@ -230,13 +241,13 @@ footer {
 
 /* Estilo para o título e parágrafos no box de detalhes de contato */
 .box-conteiner-rodape .box h3 {
-    font-size: 20px;
+    font-size: 16px;
     text-transform: capitalize;
     font-weight: bold;
     padding: 10px;
 }
 .box p {
-    font-size: 18px; 
+    font-size: 16px; 
     margin: 10px 0; 
 }
 .box p a {
@@ -254,32 +265,32 @@ footer {
 
 /* Estilo para imagens */
 .box img {
-    margin: 10px; /* Margem da imagem */
+    margin: 10px; 
 }
 
 /* Seção de direitos autorais */
 .direitos {
     padding: 10px;
-    font-size: 16px;
-    color: white; /* Cor do texto no rodapé */
+    font-size: 14px;
+    color: white; 
+    background-color: var(--verde);
 }
 
 .direitos p,
 .direitos h4 {
-    margin: 5px 0; /* Margem uniforme para p e h4 */
-    font-weight: normal; /* Peso da fonte normal */
+    margin: 5px 0; 
+    font-weight: normal; 
 }
 
 .direitos h4 a {
-    color: #1ABC9C; /* Cor do link em h4 */
+    color: #1ABC9C; 
     text-decoration: none;
-    font-weight: bold; /* Peso da fonte em negrito */
+    
 }
 
 .direitos h4 a:hover {
-    text-decoration: underline; /* Sublinhado ao passar o mouse */
+    text-decoration: underline; 
 }
-
 
 /* FIM RODAPÉ */
 

@@ -9,8 +9,38 @@
     <title>Nossos serviços - Five Soluções</title>
 </head>
 <body>
+
+     <!-- INÍCIO CABEÇALHO (NAVBAR) -->
+     <header class="main-header">
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="images/Five4.png" alt="Logo Five Soluções" class="logo-img">
+            </a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./serviços.html" class="active">Serviços</a></li>
+                    <li><a href="./quem_somos.html">Quem Somos</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+                <!-- Menu hambúrguer -->
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Botão de WhatsApp fixo -->
+    <a href="https://wa.me/559184070632?text=Oi%2C%20estou%20precisando%20dos%20seus%20serviços." target="_blank" id="whatsapp-button">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+    </a>
+
     <div class="topo">
-        <h1>Conheça os Nossos Serviços</h1>
+        <h1>Conheça os</h1> <span>   Nossos Serviços</span>
+         
     </div>
     <div class="Conteiner-serv">
         <Div class="serv">
@@ -48,14 +78,6 @@
                
             </ul>
         </Div>
-        <!-- <Div class="serv">
-            <img src="https://statics.eleconomista.com.ar/2021/03/crop/614e53ac02c88__420x280.webp" alt="" width="300" height="190">
-            <h2>Gestão de Água e Efluente</h2>
-            <ul>
-                <li>Outorga de Recusos Hídricos</li>
-                <li>Tratamento e Monitoramento de Água de Poço Artesiano</li>
-            </ul>
-        </Div> -->
         <Div class="serv">
             <img src="https://sinergiaengenharia.com.br/wp-content/uploads/2019/01/educacao-ambiental-sinergia-engenharia-de-meio-ambiente-1024x576.png" alt="" width="300" height="190">
             <h2>Educação Ambiental</h2>
@@ -65,38 +87,55 @@
             </ul>
         </Div>
     </div>
+
+    
+    <!-- INÍCIO RODAPÉ -->
+
     <footer>
         <section class="rodape">    
-            <div class="box-conteiner" id="contato">
+            <div class="box-conteiner-rodape" id="contato">
                 <div class="box">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./serviços.html">Serviços</a></li>
+                        <li><a href="./quem_somos.html">Sobre</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
                     </ul>
-
                 </div>
                 <div class="box">    
                     <h3>Detalhes De Contato</h3>
-                    <p class="bx bx-phone"> (91) 6666 - 6666</p> <br>
-                    <p class="bx bxl-whatsapp"> (91) 6666 - 6666</p> <br>
-                    <p class="bx bx-envelope"></i> dnalksnd@gmail.com</p>
-                </div>   
-               
+                    <p><i class="bx bx-phone"></i> <a href="tel:+5591984070632">(91) 98407-0632</a></p>
+                    <p><i class="bx bx-envelope"></i> <a href="mailto:fiveconsultoriasolucoes@gmail.com">fiveconsultoriasolucoes@gmail.com</a></p>
+                </div>
+                 
                 <div class="box">
                     <img src="images/Five3.png" width="300">
-                    <a href="https://wa.me/559184070632?text=Oi%2C%20estou%20precisando%20dos%20seus%20serviços." target="_blank" id="whatsapp-button">
-                        Fale Conosco no WhatsApp
-                    </a>
+
                 </div>   
-                   
             </div>
         </section>  
         <div class="direitos">
             <p>&copy; 2024 - Five Soluções Consultoria Ambiental</p>
-            <h4>Desenvolvido por <a href="">Esthefany</a></h4>
+            <h4>Desenvolvido por <a href="https://esthefanydev.github.io" target="_blank">Esthefany</a></h4>
         </div>       
     </footer>
+    
+    <!-- FIM RODAPÉ -->
+
+
+     <!-- Ion Icons -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ 
+     <!-- JavaScript para o menu hambúrguer -->
+     <script>
+         const hamburger = document.querySelector('.hamburger');
+         const navMenu = document.querySelector('.navbar ul');
+ 
+         hamburger.addEventListener('click', () => {
+             navMenu.classList.toggle('active');
+         });
+     </script>
+
 </body>
 </html>

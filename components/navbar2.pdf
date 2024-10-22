@@ -1,0 +1,67 @@
+ <!-- INÍCIO CABEÇALHO (NAVBAR) -->
+    <header class="main-header">
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="images/Five4.png" alt="Logo Five Soluções" class="logo-img">
+            </a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./serviços.html">Serviços</a></li>
+                    <li><a href="./quem_somos.html" class="active">Quem Somos</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+                <!-- Menu hambúrguer -->
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Botão de WhatsApp fixo -->
+    <a href="https://wa.me/559184070632?text=Oi%2C%20estou%20precisando%20dos%20seus%20serviços." target="_blank" id="whatsapp-button">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+    </a>
+
+    /* CABEÇALHO */
+.main-header {
+    background-color: var(--verde);
+    padding: 15px 0;
+    box-shadow: var(--sombra-leve);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.nav-list li a {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: var(--transicao-padrao);
+}
+.nav-list li a:hover,
+.nav-list li a.active {
+    color: #1ABC9C;
+}
+.logo-img {
+    max-width: 120px;
+    transition: transform 0.3s ease;
+}
+.logo-img:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,134 @@
+html
+   <!-- INÍCIO RODAPÉ -->
+
+    <footer>
+        <section class="rodape">    
+            <div class="box-conteiner-rodape" id="contato">
+                <div class="box">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./serviços.html">Serviços</a></li>
+                        <li><a href="./quem_somos.html">Sobre</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="box">    
+                    <h3>Detalhes De Contato</h3>
+                    <p><i class="bx bx-phone"></i> <a href="tel:+5591984070632">(91) 98407-0632</a></p>
+                    <p><i class="bx bx-envelope"></i> <a href="mailto:fiveconsultoriasolucoes@gmail.com">fiveconsultoriasolucoes@gmail.com</a></p>
+                </div>
+                 
+                <div class="box">
+                    <img src="images/Five3.png" width="300">
+
+                </div>   
+            </div>
+        </section>  
+        <div class="direitos">
+            <p>&copy; 2024 - Five Soluções Consultoria Ambiental</p>
+            <h4>Desenvolvido por <a href="https://esthefanydev.github.io" target="_blank">Esthefany</a></h4>
+        </div>       
+    </footer>
+    
+    <!-- FIM RODAPÉ -->
+
+CSS 
+/* INÍCIO RODAPÉ */
+
+footer {
+    background-color: rgb(0, 30, 0);
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Seção do rodapé */
+.rodape .box-conteiner-rodape {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+/* Estilo para cada box no rodapé */
+.box-conteiner-rodape .box {
+    color: white; 
+}
+
+/* Estilos específicos para a lista */
+.box ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-left: 100px; 
+    text-align: left;
+}
+
+.box ul li {
+    margin: 15px; 
+}
+
+.box ul li a {
+    color: white; /* Cor dos links */
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+.box ul li a:hover {
+    color: forestgreen; 
+}
+
+/* Estilo para o título e parágrafos no box de detalhes de contato */
+.box-conteiner-rodape .box h3 {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px;
+}
+.box p {
+    font-size: 16px; 
+    margin: 10px 0; 
+}
+.box p a {
+    /* Estilo dos links */
+    color: var(--cor_principal);
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+.box p a:hover {
+    color: forestgreen;
+}
+.box i {
+    margin-right: 8px;
+}
+
+/* Estilo para imagens */
+.box img {
+    margin: 10px; 
+}
+
+/* Seção de direitos autorais */
+.direitos {
+    padding: 10px;
+    font-size: 14px;
+    color: white; 
+    background-color: var(--verde);
+}
+
+.direitos p,
+.direitos h4 {
+    margin: 5px 0; 
+    font-weight: normal; 
+}
+
+.direitos h4 a {
+    color: #1ABC9C; 
+    text-decoration: none;
+    
+}
+
+.direitos h4 a:hover {
+    text-decoration: underline; 
+}
+
+/* FIM RODAPÉ */
