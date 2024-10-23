@@ -1,32 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envie sua pergunta</title>
-    <link rel="stylesheet" href="/css/contato.css">
-</head>
-<body>
-    <!-- INICIO DA BARRA DE NAVEGAÇÃO SUPERIOR -->
-    <header class="topo-site">
-        <a href="#" class="logo">
-            <img src="images/Five2.png" alt="logo" width="200">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Serviços</a>
-            <a href="#">Sobre</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-        <div class="icons">
-            
-        </div>
-    </header>
-   <div class="conteiner-form">
-    <form action="">
-        <label for="">Assunto</label>
-    </form>
-   </div>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Envie sua pergunta</title>
+        <link rel="stylesheet" href="/css/contato.css">
+    </head>
+    <body>
+        <!-- INÍCIO CABEÇALHO (NAVBAR) -->
+        <header class="main-header">
+            <div class="container">
+                <a href="./index.html" class="logo">
+                    <img src="images/Five4.png" alt="Logo Five Soluções"
+                        class="logo-img">
+                </a>
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./serviços.html">Serviços</a></li>
+                        <li><a href="./quem_somos.html">Quem Somos</a></li>
+                        <li><a href="./contato.html"
+                                class="active">Contato</a></li>
+                    </ul>
+                    <!-- Menu hambúrguer -->
+                    <div class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="contact-main">
+            <section class="contact-section">
+                <div class="contact-container">
+                    <!-- Ilustração à esquerda -->
+                    <div class="illustration">
+                        <h2>Fale conosco</h2>
+                        <p>Tem uma pergunta ou precisa de orientação ambiental? Nossa equipe está aqui para ajudar você a encontrar as melhores soluções.</p>
+                        <img src="/images/Five.png" alt="Ilustração">
+                        <Div class="contatos">
+                          <h3>Outros meios de contato</h3>
+                          <div class="icones">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <ion-icon name="call-outline"></ion-icon>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                          </div>  
+                        </Div>
+                    </div>
+                    <!-- Formulário à direita -->
+                    <div class="form-container">
+                        <h2>Contato</h2>
+                        <form action="https://api.staticforms.xyz/submit" method="post" class="contact-form">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" placeholder="Digite seu Nome" autocomplete="off" required>
+        
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email" placeholder="Digite seu email" autocomplete="off" required>
+        
+                            <label for="subject">Assunto</label>
+                            <input type="text" name="subject" placeholder="Digite o assunto" required>
+        
+                            <label for="message">Mensagem</label>
+                            <textarea name="message" placeholder="Digite sua mensagem" autocomplete="off" required></textarea>
+        
+                            <button type="submit" class="submit-btn">Enviar</button>
+        
+                            <input type="hidden" name="accessKey" value="01e5f268-50c8-46b5-96c4-da45b19368d0">
+                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>

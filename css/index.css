@@ -25,7 +25,7 @@ html{
 
 .topo-site {
     display: flex;
-    position: fixed;
+    position: static;
     height: 100px;
     top: 0;
     left: 0;

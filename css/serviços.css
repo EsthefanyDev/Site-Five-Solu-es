@@ -40,7 +40,7 @@ ion-icon{
 background-color: var(--verde);
 padding: 15px 0;
 box-shadow: var(--sombra-leve);
-position: sticky;
+position: static;
 top: 0;
 z-index: 100;
 }

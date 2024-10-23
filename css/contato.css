@@ -1,51 +1,188 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    list-style: none;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    transform: .2 linear;
 }
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-:root {
-    --cor_principal:#F3FCE7;
-    --cor_fonte:#292828;
-    --verde:#29490A;
 
+:root {
+    --cor_principal: #F3FCE7;
+    --cor_fonte: #292828;
+    --verde: #29490A;
+    --verde-escuro: rgb(0, 30, 0);
+    --sombra-leve: 0 4px 20px rgba(0, 0, 0, 0.2);
+    --transicao-padrao: all 0.3s ease-in-out;
 }
-.topo-site {
-    display: flex;
-    position: fixed;
-    height: 100px;
-    top: 0;
-    left: 0;
-    right: 0;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 8%;
+
+html {
     background-color: var(--cor_principal);
-    z-index: 1000;
-    box-shadow: 0 1rem #29490A;
-}
-nav a {
+    font-family: "Roboto", sans-serif;
     color: var(--cor_fonte);
-    font-size: 1.9rem;
-    font-weight: 500;
-    margin: 0 3rem;
+    font-size: 10px;
 }
-nav a:hover{
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* CABEÇALHO */
+.main-header {
+    background-color: var(--verde);
+    padding: 15px 0;
+    box-shadow: var(--sombra-leve);
+    position: static;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-list li a {
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: var(--transicao-padrao);
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+    color: #1ABC9C;
+}
+
+.logo-img {
+    max-width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+/* INÍCIO DO FORMULÁRIO */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.contact-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    background-color: white;
+    box-shadow: var(--sombra-leve);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.illustration {
+    flex: 1;
+    background-color: var(--verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.illustration h2{
+    font-size: 28px;
+    color: #eef9e6;
+}
+.illustration p{
+    font-size: 20px;
+    color: #eef9e6;
+    margin: 15px;
+    text-align: center;
+    padding: 0 10px;
+}
+.illustration img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+.illustration .contatos h3{
+    font-size: 18px;
+    color:#F3FCE7;
+}
+.illustration .contatos .icones ion-icon{
+    color: #fff;
+    font-size: 32px;
+    margin: 10px 15px;
+}
+.form-container {
+    flex: 1;
+    padding: 40px;
+    background-color: var(--cor_principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h2 {
+    font-size: 24px;
     color: var(--verde);
+    margin-bottom: 20px;
 }
-/* fim topo */
-/* inicio form */
-.conteiner-form{
-    width: 500px;
-    background-color: rebeccapurple;
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form label {
+    color: var(--cor_fonte);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    outline: none;
+    border: 2px solid var(--verde);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: var(--transicao-padrao);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--verde-escuro);
+    background-color: #d5fbb9;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+.submit-btn {
+    padding: 12px;
+    background-color: var(--verde);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transicao-padrao);
+}
+
+.submit-btn:hover {
+    background-color: var(--verde-escuro);
 }
