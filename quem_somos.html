@@ -1,71 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/Five.png">
-    <link rel="stylesheet" href="css/quem_somos.css">
-    <title>Quem Somos - Five Soluções</title>
-    <!-- Icones -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/Five.png">
+        <link rel="stylesheet" href="css/quem_somos.css">
 
-<body>
+        <link rel="stylesheet" href="/css/cards.css">
 
-    <!-- INÍCIO CABEÇALHO (NAVBAR) -->
-    <header class="main-header">
-        <div class="container">
-            <a href="./index.html" class="logo">
-                <img src="images/Five4.png" alt="Logo Five Soluções" class="logo-img">
-            </a>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./serviços.html">Serviços</a></li>
-                    <li><a href="./quem_somos.html" class="active">Quem Somos</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
-                </ul>
-                <!-- Menu hambúrguer -->
-                <div class="hamburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </nav>
-        </div>
-    </header>
+        <title>Quem Somos - Five Soluções</title>
+        <!-- Icones -->
+        <link rel="stylesheet"
+            href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-    <!-- Botão de WhatsApp fixo -->
-    <a href="https://wa.me/559184070632?text=Oi%2C%20estou%20precisando%20dos%20seus%20serviços." target="_blank" id="whatsapp-button">
-        <ion-icon name="logo-whatsapp"></ion-icon>
-    </a>
+        <!-- Swiper css -->
+        <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    </head>
 
-    <!-- INÍCIO BANNER PRINCIPAL -->
-    <section class="banner">
+    <body>
+
+        <!-- INÍCIO CABEÇALHO (NAVBAR) -->
+        <header class="main-header">
+            <div class="container">
+                <a href="./index.html" class="logo">
+                    <img src="images/Five4.png" alt="Logo Five Soluções"
+                        class="logo-img">
+                </a>
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./serviços.html">Serviços</a></li>
+                        <li><a href="./quem_somos.html" class="active">Quem
+                                Somos</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                    <!-- Menu hambúrguer -->
+                    <div class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Botão de WhatsApp fixo -->
+        <a
+            href="https://wa.me/559184070632?text=Oi%2C%20estou%20precisando%20dos%20seus%20serviços."
+            target="_blank" id="whatsapp-button">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+
+        <!-- INÍCIO BANNER PRINCIPAL -->
+        <!-- <section class="banner">
         <div class="banner-content">
             <h1>QUEM SOMOS</h1>
             <p>Conheça a equipe de engenheiras especialistas em consultoria ambiental da Five Soluções.</p>
         </div>
-    </section>
+    </section> -->
 
-    <!-- INÍCIO "NOSSA MISSÃO" -->
-    <section class="missao-section">
-        <div class="missao-container">
-            <h2 class="missao-titulo">Nossa Missão</h2>
-            <hr class="divisor">
-            <p class="missao-texto">Na Five Soluções, temos o compromisso de fornecer soluções ambientais personalizadas e eficientes para empresas que buscam uma gestão sustentável. Nossa missão é implementar práticas que garantam a preservação ambiental, ao mesmo tempo em que otimizamos os recursos naturais, promovendo o equilíbrio entre o desenvolvimento econômico e a responsabilidade ecológica.</p>
-        </div>
-        <div class="missao-image">
-            <img src="./images/freepik__upload__49092.jpeg" alt="Missão">
-        </div>
-    </section>
+        <!-- INÍCIO "NOSSA MISSÃO" -->
+        <section class="missao-section">
+            <div class="missao-container">
+                <h2 class="missao-titulo">Nossa Missão</h2>
+                <hr class="divisor">
+                <p class="missao-texto">Na Five Soluções, temos o compromisso de
+                    fornecer soluções ambientais personalizadas e eficientes
+                    para empresas que buscam uma gestão sustentável. Nossa
+                    missão é implementar práticas que garantam a preservação
+                    ambiental, ao mesmo tempo em que otimizamos os recursos
+                    naturais, promovendo o equilíbrio entre o desenvolvimento
+                    econômico e a responsabilidade ecológica. <br><br> Buscamos
+                    atuar de forma colaborativa com nossos clientes, entendendo
+                    suas necessidades e propondo soluções que sejam viáveis e
+                    sustentáveis. Nosso objetivo é apoiar a transição para
+                    práticas mais responsáveis, sempre respeitando o equilíbrio
+                    entre os aspectos econômicos e ambientais. Com foco em
+                    eficiência e resultados práticos, trabalhamos para que cada
+                    projeto tenha um impacto positivo no meio ambiente e nas
+                    operações das empresas.</p>
+                <div class="container-btn">
+                    <button class="btn"
+                        onclick="window.location.href='contato.html';">Fale com
+                        a gente</button>
+                </div>
 
-   <!-- INÍCIO "CONHEÇA NOSSA EQUIPE" -->
-    <section class="time-section">
+            </div>
+            <div class="missao-image">
+                <img src="./images/freepik__upload__49092.jpeg" alt="Missão">
+            </div>
+        </section>
+
+        <!-- INÍCIO "CONHEÇA NOSSA EQUIPE" -->
+            
+
+        <section class="time-section">
         <h2>Conheça Nossa Equipe</h2>
         <div class="membro-container">
-            <!-- Membro 1 -->
+           
             <div class="membro" id="membro-1">
                 <div class="membro-content">
                     <div class="text-content">
@@ -79,7 +112,7 @@
             </div>
             <div class="membro-image" style="background-image: url('/images/foto-membro-1.jpg');"></div>
         </div>
-        <!-- Membro 2 -->
+       
         <div class="membro" id="membro-2">
             <div class="membro-content">
                 <div class="text-content">
@@ -93,7 +126,7 @@
             </div>
             <div class="membro-image" style="background-image: url('/images/foto-membro-2.jpg');"></div>
         </div>
-        <!-- Membro 3 -->
+     
         <div class="membro" id="membro-2">
             <div class="membro-content">
                 <div class="text-content">
@@ -107,7 +140,7 @@
             </div>
             <div class="membro-image" style="background-image: url('https://i.pinimg.com/originals/ae/5f/c8/ae5fc8040c9763d5a7eb1b8d683d096f.jpg');"></div>
         </div>
-        <!-- Membro 4 -->
+        
         <div class="membro" id="membro-2">
             <div class="membro-content">
                 <div class="text-content">
@@ -123,72 +156,78 @@
         </div>
     </div>
 </section>
-<!-- FIM "CONHEÇA NOSSA EQUIPE" -->
-   <!-- INÍCIO "NOSSOS VALORES" -->
-<section class="valores">
-    <h2>Nossos Valores</h2>
-    <div class="valores-grid">
-        <div class="valor-item">
-            <ion-icon name="shield-checkmark-outline"></ion-icon>
-            <strong>Ética:</strong> Priorizamos a transparência e o comprometimento em todas as nossas soluções.
-        </div>
-        <div class="valor-item">
-            <ion-icon name="leaf-outline"></ion-icon>
-            <strong>Sustentabilidade:</strong> Todas as nossas iniciativas são pensadas para garantir um impacto positivo e duradouro no meio ambiente.
-        </div>
-        <div class="valor-item">
-            <ion-icon name="rocket-outline"></ion-icon>
-            <strong>Inovação:</strong> Buscamos continuamente novas tecnologias e métodos para aprimorar a eficiência ambiental.
-        </div>
-        <div class="valor-item">
-            <ion-icon name="people-outline"></ion-icon>
-            <strong>Responsabilidade Social:</strong> Nossas ações são focadas em gerar benefícios tanto para as empresas quanto para a sociedade.
-        </div>
-    </div>
-</section>
-
-    <!-- INÍCIO RODAPÉ -->
-    <footer>
-        <section class="rodape">
-            <div class="box-conteiner-rodape" id="contato">
-                <div class="box">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./serviços.html">Serviços</a></li>
-                        <li><a href="./quem_somos.html">Sobre</a></li>
-                        <li><a href="./contato.html">Contato</a></li>
-                    </ul>
+        <!-- FIM "CONHEÇA NOSSA EQUIPE" -->
+        <!-- INÍCIO "NOSSOS VALORES" -->
+        <section class="valores">
+            <h2>Nossos Valores</h2>
+            <div class="valores-grid">
+                <div class="valor-item">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    <strong>Ética:</strong> 
+                    <p>Priorizamos a transparência e o comprometimento em todas as nossas soluções.</p>
                 </div>
-                <div class="box">
-                    <h3>Detalhes De Contato</h3>
-                    <p><i class="bx bx-phone"></i> <a href="tel:+5591984070632">(91) 98407-0632</a></p>
-                    <p><i class="bx bx-envelope"></i> <a href="mailto:fiveconsultoriasolucoes@gmail.com">fiveconsultoriasolucoes@gmail.com</a></p>
+                <div class="valor-item">
+                    <ion-icon name="leaf-outline"></ion-icon>
+                    <strong>Sustentabilidade:</strong> 
+                    <p>Todas as nossas iniciativas são pensadas para garantir um impacto positivo e duradouro no meio ambiente.</p>
                 </div>
-                <div class="box">
-                    <img src="images/Five3.png" width="300" alt="Logo">
+                <div class="valor-item">
+                    <ion-icon name="rocket-outline"></ion-icon>
+                    <strong>Inovação:</strong> 
+                    <p>Buscamos continuamente novas tecnologias e métodos para aprimorar a eficiência ambiental.</p>
+                </div>
+                <div class="valor-item">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <strong>Social:</strong> 
+                    <p>Nossas ações são focadas em gerar benefícios tanto para as empresas quanto para a sociedade.</p>
                 </div>
             </div>
         </section>
-        <div class="direitos">
-            <p>&copy; 2024 - Five Soluções Consultoria Ambiental</p>
-            <h4>Desenvolvido por <a href="https://esthefanydev.github.io" target="_blank">Esthefany</a></h4>
-        </div>
-    </footer>
 
-    <!-- Ion Icons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- INÍCIO RODAPÉ -->
+        <footer>
+            <section class="rodape">
+                <div class="box-conteiner-rodape" id="contato">
+                    <div class="box">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./serviços.html">Serviços</a></li>
+                            <li><a href="./quem_somos.html">Sobre</a></li>
+                            <li><a href="./contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h3>Detalhes De Contato</h3>
+                        <p><i class="bx bx-phone"></i> <a
+                                href="tel:+5591984070632">(91)
+                                98407-0632</a></p>
+                        <p><i class="bx bx-envelope"></i> <a
+                                href="mailto:fiveconsultoriasolucoes@gmail.com">fiveconsultoriasolucoes@gmail.com</a></p>
+                    </div>
+                    <div class="box">
+                        <img src="images/Five3.png" width="300" alt="Logo">
+                    </div>
+                </div>
+            </section>
+            <div class="direitos">
+                <p>&copy; 2024 - Five Soluções Consultoria Ambiental</p>
+                <h4>Desenvolvido por <a href="https://esthefanydev.github.io"
+                        target="_blank">Esthefany</a></h4>
+            </div>
+        </footer>
 
+        <!-- Ion Icons -->
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <!-- JavaScript para o menu hambúrguer -->
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.navbar ul');
+        <!-- Swiper JS -->
+        <script src="./js/swiper-bundle.min.js"></script>
 
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    </script>
-</body>
+        <!-- JavaScript -->
+        <script src="./js/scripts.js"></script>
+
+    </body>
 
 </html>

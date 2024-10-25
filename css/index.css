@@ -14,6 +14,14 @@
     --cor_principal:#F3FCE7;
     --cor_fonte:#292828;
     --verde:#29490A;
+
+    /* Tamanhos de Fonte */
+    --fonte-titulo-principal: 28px; 
+    --fonte-titulo-secundario: 24px; 
+    --fonte-paragrafo: 18px; 
+    --fonte-descricao: 14px; 
+    --fonte-botao: 16px;
+    --fonte-icone-medio: 28px; 
 }
 html{
     font-size: 10px; /* O tamanho base em px */
@@ -25,23 +33,24 @@ html{
 
 .topo-site {
     display: flex;
-    position: static;
-    height: 100px;
+    position: relative;
+    height: 86px;
     top: 0;
     left: 0;
     right: 0;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 80px;
+    padding: 10px 70px;
     background-color: var(--cor_principal);
     z-index: 1000;
-    box-shadow: 0 10px #29490A;
+    box-shadow: 0 6px #29490A;
 }
 nav a {
     color: var(--cor_fonte);
-    font-size: 19px;
+    font-size: var(--fonte-botao);
+    text-transform: uppercase;
     font-weight: 500;
-    margin: 0 30px;
+    margin: 0 25px;
 }
 #whatsapp-button {
     position: fixed;
@@ -66,45 +75,85 @@ nav a:hover{
     text-decoration: none;
 }
 ion-icon {
-    font-size: 40px;
+    font-size: var(--fonte-icone-medio)
   
 }
-
-
 /* FIM DA BARRA DE NAVEGAÇÃO SUPERIOR  */
 
-.carousel{
-    margin-top: 10px;
+.carousel-item img{
+    height: 75vh;
 }
+    
 /* INÍCIO "SOBRE NÓS" */
 
 .sobre-nos {
-    margin: 20px; 
-    padding: 15px; 
+    display: flex;
+    flex-direction: column;
+    padding: 80px 10px; 
     background-color: var(--cor_principal); 
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     text-align: center; 
+    align-items: center;
 }
 .sobre-nos h2 {
-    font-size: 29px;
-    font-weight: bold;
+    font-size: var(--fonte-titulo-principal);
     color: #29490A;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    margin: 25px;
+    border-left: 19px solid var(--verde);
+    text-align: center; 
+    width: 500px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
 }
-.sobre-nos p {
-    font-size: 20px; 
+.sobre-nos .paragrafo {
+    font-size: var(--fonte-paragrafo); 
     text-align: justify;
     line-height: 1.7;
     color: #333;
-    padding:10px 80px;
-    margin: 30px; 
+    padding:20px 90px;
+    margin-top: 50px; 
 }
 .highlight {
     color: #20b258;
     
 }
+
+.rs-icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 70px 0;
+}
+
+.r-item {
+    margin: 20px;
+    width: 200px; /* Ajuste conforme necessário */
+}
+
+.r-icon {
+    width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.r-item h3 {
+    font-size: var(--fonte-titulo-secundario);
+    color: #29490A;
+    margin: 20px;
+}
+
+.r-item p {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #707070;
+}
+
+
+
 .sobre-nos .btn ion-icon{
     font-size: 20px;
     margin-right: 10px;
@@ -137,18 +186,23 @@ ion-icon {
 /* INÍCIO "POR QUE ESCOLHER A FIVE" */
 
 .pq-escolher {
-    background-image: url(/images/background1.png);
+    background-image: url(/images/background2.png);
     background-size: cover;
     height: auto;
     padding: 12px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .pq-escolher h2 {
-    margin: 26px;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
+    margin: 50px;
+    font-size: var(--fonte-titulo-principal);
+    border-left: 19px solid var(--cor_principal);
+    color: var(--cor_principal);
+    width: 400px;
     text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 .pq-escolher .box-container {
     display: flex;
@@ -161,15 +215,14 @@ ion-icon {
 .pq-escolher .box-container .box1 {
     width: 100%;
     max-width: 330px;
-    height: auto;
+    max-height: auto;
     background-color: #f0f0f0;
-    padding: 18px;
+    padding: 10px;
     margin: 10px;
     border-style: double;
     border: 3px solid var(--verde);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    min-height: 500px; 
+    text-align: center; 
     transition: background-color 0.3s, transform 0.4s;
 }
 .pq-escolher .box-container .box1:hover{
@@ -181,15 +234,16 @@ ion-icon {
     margin-bottom: 20px;
 }
 .pq-escolher .box-container .box1 h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    font-weight: bold;
+    font-size: var(--fonte-titulo-secundario);
+    margin: 0 15px;
+    color: var(--verde);
+    padding: 10px 0;
+    border-bottom:2px solid var(--cor_fonte) ;
 }
 .pq-escolher .box-container .box1 p {
-    font-size: 18px;
-    line-height: 1.6;
-    font-weight: 500;
-    font-size: 18px;
+    font-size: var(--fonte-paragrafo);
+    line-height: 1.5;
+    padding: 15px 19px;
     text-align: justify;
 }
 
