@@ -74,42 +74,78 @@ transition: transform 0.3s ease;
 .logo-img:hover {
 transform: scale(1.05);
 }
+/* Seção Introdutória */
+/* Seção Introdutória dos Serviços */
+.intro-servicos {
+  padding-top: 70px;
+  background-color: transparent; /* Fundo neutro */
+  border-bottom: 2px solid #E0E0E0;
+  height: 40vh;
+}
+
+.intro-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.intro-texto {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.intro-texto h2 {
+  font-size: 28px;
+  padding: 0 20px;
+  color: forestgreen;
+  border-left: 10px solid forestgreen;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.intro-texto p {
+  font-size: 16px;
+  text-align: justify;
+  margin-top: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.intro-destaque {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-destaque ul {
+  list-style: none;
+  padding: 0;
+}
+
+.intro-destaque li {
+  font-size: 16px;
+  color: #4CAF50;
+  margin: 5px 0;
+  position: relative;
+}
+
+.intro-destaque li::before {
+  content: "✔";
+  color: #4CAF50;
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+}
 
 
-
-.topo {
-    background-image: url(/images/background1.png);
-    margin: 0;
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    height: 30vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.topo h1{
-    font-size: 48px;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    animation: fade-in-title 1s ease-out;
-}
-.topo span{
-    margin-left: 10px;
-    font-size: 48px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    animation: fade-in-text 1.5s ease-out; 
-}
 @keyframes fade-in-title {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-@keyframes fade-in-text {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(-40px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
@@ -117,31 +153,31 @@ transform: scale(1.05);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 16px; 
+    gap: 14px; 
     padding: 10px;
-    padding-bottom: 0;
-    margin: 20px 10px;
+    margin: 30px;
 }
 .serv {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    max-width: 340px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 328px;
+    max-height: 520px;
 }
 
 .serv:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
 }
 
 .serv img {
     width: 100%;
-    height: 32%;
+    height: 30%;
 }
 .serv h2 {
-    font-size: 22px; 
+    font-size: 19px; 
     color: #29490A;
     text-align: center;
     padding: 8px 0px; 
@@ -151,20 +187,88 @@ transform: scale(1.05);
 .serv ul {
     list-style-type: none;
     padding: 10px; 
-    margin: 0;
+    margin: 5px;
 }
 .serv ul li {
-    font-size: 19px; 
-    padding: 8px 0; 
+    font-size: 16px; 
+    padding: 10px 5px; 
     border-bottom: 1px solid #eee;
 }
 .serv ul li:last-child {
     border-bottom: none;
 }
-.serv ul li:hover {
-    background-color: #e0f7fa;
-}
 
+
+/* Seção Diferenciais */
+.diferenciais {
+    padding: 50px 20px;
+    background:url(/images/background2.png);
+    color: #333;
+    text-align: center;
+}
+  
+.diferenciais h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--cor_principal);
+    margin-bottom: 18px;
+}
+  
+.diferenciais p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+  
+/* Lista de Diferenciais em Colunas */
+.diferenciais ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    max-width: 930px;
+    margin: 0 auto;
+}
+  
+.diferenciais li {
+    flex: 1 1 250px;
+    background-color: #F3FCE7;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: justify;
+}
+  
+  .diferenciais li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+  
+/* Ícone e Texto em Cada Diferencial */
+.diferenciais li::before {
+    content: "⭐";
+    font-size: 24px;
+    color: #4CAF50;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+  
+.diferenciais li span {
+    display: inline-block;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+  
+  
 /* INÍCIO RODAPÉ */
 
 footer {

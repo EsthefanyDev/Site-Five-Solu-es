@@ -89,7 +89,7 @@ ion-icon {
 .sobre-nos {
     display: flex;
     flex-direction: column;
-    padding: 80px 10px; 
+    padding: 40px 10px; 
     background-color: var(--cor_principal); 
     border-radius: 5px; 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -101,6 +101,7 @@ ion-icon {
     color: #29490A;
     border-left: 19px solid var(--verde);
     text-align: center; 
+    margin-bottom: 10px;
     width: 500px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
 }
@@ -109,12 +110,11 @@ ion-icon {
     text-align: justify;
     line-height: 1.7;
     color: #333;
-    padding:20px 90px;
-    margin-top: 50px; 
+    padding:10px 50px;
+    margin:10px 50px; 
 }
 .highlight {
     color: #20b258;
-    
 }
 
 .rs-icons {
@@ -125,7 +125,7 @@ ion-icon {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 70px 0;
+    margin: 20px 0;
 }
 
 .r-item {
@@ -134,7 +134,7 @@ ion-icon {
 }
 
 .r-icon {
-    width: 150px; /* Ajuste conforme necessário */
+    width: 100px; /* Ajuste conforme necessário */
     height: auto;
     margin-bottom: 10px;
 }
@@ -170,7 +170,7 @@ ion-icon {
     font-size: 18px; 
     font-weight: bold; 
     text-decoration: none; 
-    border-radius: 5px; 
+    border-radius: 2px; 
     cursor: pointer; 
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
     margin-bottom: 20px;
@@ -196,9 +196,9 @@ ion-icon {
     align-items: center;
 }
 .pq-escolher h2 {
-    margin: 50px;
+    margin: 30px;
     font-size: var(--fonte-titulo-principal);
-    border-left: 19px solid var(--cor_principal);
+    border-left: 16px solid var(--cor_principal);
     color: var(--cor_principal);
     width: 400px;
     text-transform: uppercase;
@@ -238,7 +238,7 @@ ion-icon {
     margin: 0 15px;
     color: var(--verde);
     padding: 10px 0;
-    border-bottom:2px solid var(--cor_fonte) ;
+    border-bottom:2px solid #3333 ;
 }
 .pq-escolher .box-container .box1 p {
     font-size: var(--fonte-paragrafo);
