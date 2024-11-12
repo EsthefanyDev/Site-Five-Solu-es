@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 /* Reset básico */
 * {
     margin: 0;
@@ -82,11 +83,11 @@ main {
 .contact-container {
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     height: 100%;
     background-color: white;
     box-shadow: var(--sombra-leve);
-    border-radius: 16px;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -165,19 +166,21 @@ main {
 
 .contact-form input,
 .contact-form textarea {
-    padding: 12px;
+    padding: 10px;
+    color: #292828;
+    font-family: "Nunito", sans-serif;
     outline: none;
     border: 2px solid var(--verde);
     margin-bottom: 20px;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 5px;
+    font-size: 18px;
     transition: var(--transicao-padrao);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: var(--verde-escuro);
-    background-color: #d5fbb9;
+    border-radius: 14px;
 }
 
 .contact-form textarea {
