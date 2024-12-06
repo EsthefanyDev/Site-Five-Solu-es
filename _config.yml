@@ -1,3 +1,8 @@
 theme: jekyll-theme-primer
 baseurl: ""  # Deixe em branco se os arquivos estiverem na raiz
 url: "https://EsthefanyDev.github.io/SiteFiveSolucoes"
+
+# Adicionando uma configuração para lidar com o caminho das imagens
+include:
+  - "images"
+  - "css"
