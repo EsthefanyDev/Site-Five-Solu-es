@@ -202,7 +202,7 @@ transform: scale(1.05);
 /* Seção Diferenciais */
 .diferenciais {
     padding: 50px 20px;
-    background:url(/images/background2.png);
+    background:url(images/background2.png);
     color: #333;
     text-align: center;
 }
