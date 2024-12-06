@@ -52,6 +52,22 @@ nav a {
     font-weight: 500;
     margin: 0 25px;
 }
+
+.menu {
+    display: flex; /* Visível por padrão em telas grandes */
+    gap: 25px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--cor_fonte);
+    cursor: pointer;
+}
+
+
 #whatsapp-button {
     position: fixed;
     bottom: 20px;
@@ -151,8 +167,6 @@ ion-icon {
     font-size: 14px;
     color: #707070;
 }
-
-
 
 .sobre-nos .btn ion-icon{
     font-size: 20px;
@@ -356,16 +370,58 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background-color: var(--cor_principal);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .menu.active {
+        display: flex; 
+        border-bottom: 5px solid var(--verde);
+    }
+
+    .menu a {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        
+    }
+
+    .topo-site {
+        padding: 10px 20px; 
+    }
+
+    .carousel-item img{
+        height: 30vh;
+    }
+    
+    /* Sobre Nós */
     .sobre-nos h2 {
         font-size: 24px;
     }
 
-    .paragrafo {
-        padding: 18px 20px;
+    .sobre-nos .paragrafo {
+        padding: 10px;
     }
 
-    .paragrafo p {
+
+    .sobre-nos .rs-icons .r-item h3 {
         font-size: 20px;
+        margin: 0;
+    }
+    .sobre-nos .rs-icons .r-item p {
+        font-size: 14px;
     }
 
     .sobre-nos .btn {
@@ -374,6 +430,20 @@ footer {
         height: 50px;
         font-size: 16px;
     }
+
+    /* "POR QUE ESCOLHER A FIVE" */
+    .pq-escolher h2{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .pq-escolher .box-container .box1{
+        margin: 0;
+        width: 290px;
+    }
+    .pq-escolher .box-container .box1 p{
+        font-size: 18px;
+    }
+
 }
 
 @media (max-width: 480px) {
