@@ -371,6 +371,13 @@ footer {
 /* Responsividade */
 /* Para telas com largura máxima de 768px */
 @media (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
     .menu {
         display: none;
         flex-direction: column;
@@ -480,6 +487,13 @@ footer {
 
 /* Para telas com largura máxima de 480px */
 @media (max-width: 480px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
     .sobre-nos h2 {
         font-size: 18px;
         text-align: center;
