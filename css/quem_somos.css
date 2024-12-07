@@ -101,6 +101,15 @@ ion-icon{
     transform: scale(1.05);
 }
 
+/* Botão do Menu para Dispositivos Móveis */
+.container .menu-toggle {
+    display: none;
+    font-size: 2.4rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
 /* BANNER */
 /* .banner {
     background-color: var(--cor_principal);
@@ -464,6 +473,49 @@ footer {
 
 /* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .container .menu-toggle{
+        display: block;
+        color: #E0E0E0;
+        font-size: 2.3rem;
+        background: none;
+        border: none;
+    }
+    .menu-toggle:focus{
+        outline: none;
+    }
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+        background-color: var(--verde);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 15px 0;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    }
+    .navbar ul.active {
+        display: flex;
+        border-bottom: 5px solid #fff;
+    }
+    .navbar ul li a{
+        margin: 10px 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+        
+    }
     .missao-section {
         flex-direction: column; /* Coloca a imagem abaixo do texto em telas menores */
         align-items: flex-start; /* Alinha os itens ao topo */
@@ -481,6 +533,12 @@ footer {
 }
 
 @media (max-width: 480px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
     .missao-titulo {
         font-size: 28px; /* Reduz o tamanho da fonte em telas menores */
     }
