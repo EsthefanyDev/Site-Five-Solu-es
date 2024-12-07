@@ -28,6 +28,12 @@ html{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
 
 /* INICIO DA BARRA DE NAVEGAÇÃO SUPERIOR  */
 
@@ -118,7 +124,7 @@ ion-icon {
     border-left: 19px solid var(--verde);
     text-align: center; 
     margin-bottom: 10px;
-    width: 500px;
+    padding-left: 10px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
 }
 .sobre-nos .paragrafo {
@@ -214,7 +220,7 @@ ion-icon {
     font-size: var(--fonte-titulo-principal);
     border-left: 16px solid var(--cor_principal);
     color: var(--cor_principal);
-    width: 400px;
+    padding-left: 10px;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -363,63 +369,79 @@ footer {
 /* FIM RODAPÉ */
 
 /* Responsividade */
-@media (max-width: 1024px) {
-    .paragrafo {
-        padding: 18px 80px;
-    }
-}
-
+/* Para telas com largura máxima de 768px */
 @media (max-width: 768px) {
     .menu {
-        display: none; 
+        display: none;
         flex-direction: column;
         background-color: var(--cor_principal);
         position: absolute;
         top: 100%;
         right: 0;
         width: 100%;
-        padding: 10px 0;
+        padding: 15px 0;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
         z-index: 1000;
+        transition: all 0.3s ease-in-out;
     }
 
     .menu.active {
-        display: flex; 
+        display: flex;
         border-bottom: 5px solid var(--verde);
     }
 
     .menu a {
         margin: 10px 0;
         text-align: center;
+        font-size: 12px;
+        color: #292828;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+    }
+
+    .menu a:hover {
+        color: var(--verde);
     }
 
     .menu-toggle {
         display: block;
-        
+        font-size: 2.3rem;
+        background: none;
+        border: none;
+        color: #292828;
     }
 
     .topo-site {
-        padding: 10px 20px; 
+        padding: 10px 20px;
+    }
+    .topo-site img{
+        width: 150px;
     }
 
-    .carousel-item img{
+    .carousel-item img {
         height: 30vh;
+        object-fit: cover;
     }
-    
-    /* Sobre Nós */
+
+    /*  Conheça um pouco sobre Nós */
     .sobre-nos h2 {
-        font-size: 24px;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .sobre-nos .paragrafo {
-        padding: 10px;
+        font-size: 16px;
+        padding: 0 1px;
+        text-align: justify;
     }
-
 
     .sobre-nos .rs-icons .r-item h3 {
-        font-size: 20px;
-        margin: 0;
+        font-size: 18px;
+        margin: 5px 0;
     }
+
     .sobre-nos .rs-icons .r-item p {
         font-size: 14px;
     }
@@ -429,35 +451,91 @@ footer {
         max-width: 300px;
         height: 50px;
         font-size: 16px;
+        margin-top: 20px;
     }
 
-    /* "POR QUE ESCOLHER A FIVE" */
-    .pq-escolher h2{
+    /* "Por Que Escolher A Five" */
+    .pq-escolher h2 {
         font-size: 24px;
-        margin-bottom: 40px;
-    }
-    .pq-escolher .box-container .box1{
-        margin: 0;
-        width: 290px;
-    }
-    .pq-escolher .box-container .box1 p{
-        font-size: 18px;
+        margin-bottom: 30px;
+        text-align: center;
     }
 
+    .pq-escolher .box-container .box1 {
+        width: 100%;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    .pq-escolher .box-container .box1 p {
+        font-size: 16px;
+    }
+    .rodape .box ul{
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
 }
 
+/* Para telas com largura máxima de 480px */
 @media (max-width: 480px) {
     .sobre-nos h2 {
-        font-size: 20px;
+        font-size: 18px;
+        text-align: center;
+        border: none;
+        margin: 20px auto;
+        font-weight: bold;
+
     }
 
     .paragrafo p {
-        font-size: 20px;
+        font-size: 12px;
+        text-align: center;
+        margin: auto;
     }
 
+    .sobre-nos .rs-icons .r-item{
+        margin: 8px 6px;
+        width: 150px;
+    }
+    .sobre-nos .rs-icons .r-item p{
+        margin: 0;
+    }
     .sobre-nos .btn {
         width: 100%;
         height: 50px;
         font-size: 16px;
+        margin-top: 20px;
+    }
+
+    /* Porque escolher  */
+    .pq-escolher h2{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .pq-escolher .box-container .box1 {
+        width: 46%;
+        margin:0;
+        padding: 8px;
+    }
+    .pq-escolher .box-container .box1 img{
+        margin: 0;
+    }
+    .pq-escolher .box-container .box1 h3{
+        font-size: 16px;
+        margin: 0;
+    }
+    .pq-escolher .box-container .box1 p {
+        font-size: 12px;
+        padding: 4px 0;
+        text-align: center;
+    }
+
+    .rodape .box ul{
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 }
