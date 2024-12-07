@@ -202,6 +202,63 @@ ion-icon {
 }
 
 /* FIM "SOBRE NÓS"  */
+
+/* INÍCIO CONHEÇA NOSSOS SERVIÇOS */
+.servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--verde);
+
+}
+.servicos h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    color: var(--cor_principal);
+}
+
+.servicos p{
+    font-size: 18px;
+    text-align: center;
+    padding: 0 10px;
+    color: #f0f0f0;
+    line-height: 1.2;
+}
+
+.servicos .btn ion-icon{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.servicos .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 230px; 
+    height: 50px; 
+    background-color: var(--cor_principal); 
+    border: 2px solid var(--cor_principal); 
+    color: #29490A; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-radius: 2px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+    margin-bottom: 20px;
+}
+.servicos .btn:hover {
+    background-color: transparent; 
+    transform: translateY(-1px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    color: var(--cor_principal); 
+}
+/*FIM CONHEÇA NOSSOS SERVIÇOS */
+
+
 /* INÍCIO "POR QUE ESCOLHER A FIVE" */
 
 .pq-escolher {
@@ -267,6 +324,7 @@ ion-icon {
 }
 
 /* FIM "POR QUE ESCOLHER A FIVE" */
+
 /* INÍCIO RODAPÉ */
 
 footer {
@@ -544,6 +602,8 @@ footer {
     }
     .pq-escolher h2{
         font-size: 28px;
+        text-align: left;
+        border-left: 10px solid var(--verde);
         font-weight: bold;
         text-shadow: 2px 1px 0 var(--verde);
     }
