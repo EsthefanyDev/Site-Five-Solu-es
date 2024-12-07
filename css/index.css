@@ -9,7 +9,6 @@
     outline: none;
     border: none;
     transform: .2 linear;
-    overflow-x: hidden;
 }
 :root {
     --cor_principal:#F3FCE7;
