@@ -417,6 +417,9 @@ footer {
         border: none;
         color: #292828;
     }
+    .menu-toggle:focus{
+        outline: none;
+    }
 
     .topo-site {
         padding: 10px 20px;
@@ -438,18 +441,18 @@ footer {
     }
 
     .sobre-nos .paragrafo {
-        font-size: 16px;
+        font-size: 20px;
         padding: 0 1px;
         text-align: justify;
     }
 
     .sobre-nos .rs-icons .r-item h3 {
-        font-size: 18px;
+        font-size: 22px;
         margin: 5px 0;
     }
 
     .sobre-nos .rs-icons .r-item p {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .sobre-nos .btn {
