@@ -16,20 +16,16 @@
             <a href="./index.html" class="logo">
                 <img src="images/Five4.png" alt="Logo Five Soluções" class="logo-img">
             </a>
-            <nav class="navbar">
+           
+            <nav class="navbar menu">
                 <ul class="nav-list">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./serviços.html" class="active">Serviços</a></li>
                     <li><a href="./quem_somos.html">Quem Somos</a></li>
                     <li><a href="./contato.html">Contato</a></li>
                 </ul>
-                <!-- Menu hambúrguer -->
-                <div class="hamburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
             </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
         </div>
     </header>
 
@@ -155,13 +151,16 @@
  
      <!-- JavaScript para o menu hambúrguer -->
      <script>
-         const hamburger = document.querySelector('.hamburger');
-         const navMenu = document.querySelector('.navbar ul');
- 
-         hamburger.addEventListener('click', () => {
-             navMenu.classList.toggle('active');
-         });
-     </script>
+       document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar ul");
+
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+});
+
+    </script>
 
 </body>
 </html>

@@ -318,7 +318,7 @@ ion-icon {
 }
 .pq-escolher .box-container .box1 p {
     font-size: var(--fonte-paragrafo);
-    line-height: 1.5;
+    line-height: 1.3;
     padding: 15px 19px;
     text-align: justify;
 }
