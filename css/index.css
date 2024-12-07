@@ -9,6 +9,7 @@
     outline: none;
     border: none;
     transform: .2 linear;
+    overflow-x: hidden;
 }
 :root {
     --cor_principal:#F3FCE7;
@@ -25,7 +26,6 @@
 }
 html{
     font-size: 10px; /* O tamanho base em px */
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 body{
