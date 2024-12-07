@@ -494,26 +494,35 @@ footer {
     }
     
     .sobre-nos h2 {
-        font-size: 18px;
+        font-size: 24px;
         text-align: center;
-        border: none;
-        margin: 20px auto;
+        padding: 5px;
+        margin: 20px;
         font-weight: bold;
 
     }
 
-    .paragrafo p {
+    .sobre-nos .paragrafo {
         font-size: 12px;
-        text-align: center;
-        margin: auto;
+        text-align: justify;
+        margin: 20px 10px;
     }
 
+    .sobre-nos .rs-icons{
+        margin: 0;
+        padding: 0;
+    }
     .sobre-nos .rs-icons .r-item{
-        margin: 8px 6px;
+        margin: 0px 0px 18px 0px;
         width: 150px;
+    }
+    .sobre-nos .rs-icons .r-item h3{
+        font-size: 18px;
+        font-weight: bold;
     }
     .sobre-nos .rs-icons .r-item p{
         margin: 0;
+        font-size: larger;
     }
     .sobre-nos .btn {
         width: 100%;
@@ -523,12 +532,20 @@ footer {
     }
 
     /* Porque escolher  */
+    .pq-escolher{
+        margin: 0;
+        padding: 0 0 14px;
+    }
     .pq-escolher h2{
-        font-size: 18px;
+        font-size: 28px;
         font-weight: bold;
+        text-shadow: 2px 1px 0 var(--verde);
+    }
+    .pq-escolher .box-container{
+        gap: 16px;
+        
     }
     .pq-escolher .box-container .box1 {
-        width: 46%;
         margin:0;
         padding: 8px;
     }
@@ -536,13 +553,16 @@ footer {
         margin: 0;
     }
     .pq-escolher .box-container .box1 h3{
-        font-size: 16px;
+        font-size: 18px;
         margin: 0;
+        font-weight: bold;
+        text-transform: capitalize;
     }
     .pq-escolher .box-container .box1 p {
-        font-size: 12px;
+        font-size: 18px;
         padding: 4px 0;
         text-align: center;
+        margin: 10px;
     }
 
     .rodape .box ul{
