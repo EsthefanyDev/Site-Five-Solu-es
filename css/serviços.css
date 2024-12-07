@@ -396,6 +396,14 @@ footer {
         width: 100%;
         overflow-x: hidden;
     }
+
+    /* Menu */
+    .topo-site {
+        padding: 10px 20px;
+    }
+    .topo-site img{
+        width: 150px;
+    }
     .container .menu-toggle{
         display: block;
         color: #E0E0E0;
@@ -433,12 +441,11 @@ footer {
         transition: color 0.3s ease;
         
     }
-
+    /* Fim Menu */
+    /* Seção Introdutória dos Serviços */
+    .intro-servicos{
+        padding: 20px 10px;
+    }
    
-    .topo-site {
-        padding: 10px 20px;
-    }
-    .topo-site img{
-        width: 150px;
-    }
+    
 }
