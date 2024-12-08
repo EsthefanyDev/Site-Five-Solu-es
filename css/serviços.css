@@ -99,7 +99,8 @@ transform: scale(1.05);
   padding-top: 70px;
   background-color: transparent; /* Fundo neutro */
   border-bottom: 2px solid #E0E0E0;
-  height: 40vh;
+  height: 50vh;
+  text-align: center;
 }
 
 .intro-grid {
@@ -139,6 +140,7 @@ transform: scale(1.05);
   flex: 1;
   min-width: 280px;
   display: flex;
+  text-align: left;
   align-items: center;
   justify-content: center;
 }
@@ -162,6 +164,35 @@ transform: scale(1.05);
   margin-right: 0.5rem;
 }
 
+.intro-servicos .btn ion-icon{
+   
+    font-size: 30px;
+    margin-left: 10px;
+}
+.intro-servicos .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 230px; 
+    height: 50px; 
+    background-color: #29490A; 
+    border: 2px solid #29490A; 
+    color: var(--cor_principal); 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-radius: 2px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+    margin-bottom: 20px;
+}
+.intro-servicos .btn:hover {
+    background-color: transparent; 
+    transform: translateY(-1px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    color: var(--verde); 
+}
 
 @keyframes fade-in-title {
     from { opacity: 0; transform: translateY(-40px); }
@@ -173,8 +204,7 @@ transform: scale(1.05);
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 14px; 
-    padding: 10px;
-    margin: 30px;
+    margin: 14px;
 }
 .serv {
     background-color: #fff;
@@ -182,8 +212,8 @@ transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
-    max-width: 328px;
-    max-height: 520px;
+    max-width: 345px;
+    max-height: 680px;
 }
 
 .serv:hover {
@@ -193,24 +223,24 @@ transform: scale(1.05);
 
 .serv img {
     width: 100%;
-    height: 30%;
+    height: 25%;
 }
 .serv h2 {
-    font-size: 19px; 
+    font-size: 22px; 
     color: #29490A;
     text-align: center;
-    padding: 8px 0px; 
+    padding: 14px 0px; 
     background-color: #e0f2f1;
     margin: 0;
 }
 .serv ul {
     list-style-type: none;
-    padding: 10px; 
-    margin: 5px;
+    padding: 10px;
+    
 }
 .serv ul li {
     font-size: 16px; 
-    padding: 10px 5px; 
+    padding: 20px 14px; 
     border-bottom: 1px solid #eee;
 }
 .serv ul li:last-child {
@@ -447,5 +477,21 @@ footer {
         padding: 20px 10px;
     }
    
+    
+}
+@media (max-width: 480px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .intro-servicos{
+        padding: 20px 10px;
+        height: 450px;
+    }
+    .intro-servicos .intro-grid .intro-texto h2{
+        line-height: 1.2;
+    }
     
 }
