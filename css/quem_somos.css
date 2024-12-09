@@ -34,6 +34,7 @@ body{
     background-size: cover;
     line-height: 1.6;
     background-image: url(/images/background3.png);
+    overflow-x: hidden; /* Remove rolagem horizontal */
 }
 @keyframes fade-in {
     from { opacity: 0; }
@@ -200,63 +201,46 @@ ion-icon{
     border-left: 12px solid var(--verde);
 }
 
-
 /* Container dos membros com espaçamento entre os itens */
 .membro-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(550px, 1fr)); /* Define as colunas da grid */
-    margin:30px;
+    gap: 20px; /* Espaçamento entre os itens */
+    margin: 30px;
 }
 
 /* Cada membro com layout responsivo e imagem ao lado */
 .membro {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row; /* Imagem ao lado por padrão */
     align-items: center;
-    margin: 10px;
-    padding: 0px;
     background-color: #fff;
     border: 2px solid var(--verde);
     border-radius: 5px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    
-}
-
-/* Alterna o layout para os membros pares */
-.membro:nth-child(even) {
-    flex-direction: row;
+    overflow: hidden; /* Garante que o conteúdo extra fique oculto */
 }
 
 /* Estilos do conteúdo de texto */
-/* Estilos Gerais */
 .membro-content {
-    width: 50%;
-    margin: auto;
-}
-
-/* Estilos do Conteúdo de Texto */
-.text-content {
-    width: auto;
+    flex: 1; /* Ocupa o restante do espaço */
+    padding: 20px;
 }
 
 .text-content h3 {
-    font-size:var(--fonte-titulo-secundario);
+    font-size: var(--fonte-titulo-secundario);
     color: var(--verde);
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .text-content p {
-    font-size:var(--fonte-descricao) ;
+    font-size: var(--fonte-descricao);
     color: #333;
     line-height: 1.5;
     text-align: justify;
 }
 
-/* Estilos da Lista */
-.social-icons{
-    margin: 0;
-}
 .text-content ul {
     display: flex;
     justify-content: center;
@@ -266,7 +250,7 @@ ion-icon{
 }
 
 .text-content ul li a {
-    font-size: var(--fonte-icone-medio); 
+    font-size: var(--fonte-icone-medio);
     color: var(--verde);
     transition: color 0.3s ease;
     cursor: pointer;
@@ -276,19 +260,17 @@ ion-icon{
     color: forestgreen;
 }
 
-/* Estilos da Imagem */
+/* Estilos da imagem */
 .membro-image {
-    width: 32%;
-    height: 100%; 
-    border-radius:0 3px 3px 0px;
-    margin: 0px;
+    width: 35%; /* Proporção da imagem ao lado */
+    height: 100%; /* Ajusta a altura para preencher o espaço */
     background-size: cover;
     background-position: center;
     transition: transform 0.3s ease;
 }
 
 .membro-image:hover {
-    transform: scale(1.03); 
+    transform: scale(1.03); /* Efeito de zoom */
 }
 
 /* FIM "CONHEÇA NOSSA EQUIPE" */
@@ -543,27 +525,45 @@ footer {
         margin: 20px;
         line-height: 1.3;
     }
-    .membro-container{
-        display: flex;
-        flex-direction: column;    
-    }
-    .membro-content{
-        margin: 20px;
-        width: 100%;
-       
-    }
-    .membro-container .membro-image{
-        display:none;
+    .time-section{
 
+    }
+    .membro-container{
+        margin: 0 10px;
+        width: 90%;
+        grid-template-columns: 1fr; /* Força apenas uma coluna */
+    }
+    .membro {
+        flex-direction: column-reverse; /* Empilha imagem e texto */
+        
+    }
+
+    .membro-image {
+        width: 100%; /* Imagem ocupa toda a largura */
+        height: 250px; /* Altura ajustada para visualização */
+    }
+
+    .membro-content {
+        padding: 5px 15px; 
+        text-align: center;
+    }
+
+    .text-content p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .valores{
+        margin-top: 0px;
+        
     }
     .valores h2{
         font-size: 28px;
-        width: auto;
-        text-align: left;
-        padding:0 10px;
+        width: 280px;
+        margin-top: 60px;
+        line-height: 1.3;
     }
     .valor-item p{
         text-align: center;
     }
-    
 }
+    
