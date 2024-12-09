@@ -486,6 +486,7 @@ footer {
         max-width: 100%;
 
     }
+ 
 }
 
 @media (max-width: 480px) {
@@ -514,9 +515,6 @@ footer {
         width: 90px; /* Reduz o tamanho do divisor */
     }
 
-    .time-section{
-
-    }
     .time-section h2{
         font-size: 28px;
         width: auto;
@@ -525,9 +523,7 @@ footer {
         margin: 20px;
         line-height: 1.3;
     }
-    .time-section{
 
-    }
     .membro-container{
         margin: 0 10px;
         width: 90%;
@@ -540,7 +536,7 @@ footer {
 
     .membro-image {
         width: 100%; /* Imagem ocupa toda a largura */
-        height: 250px; /* Altura ajustada para visualização */
+        height: 300px; /* Altura ajustada para visualização */
     }
 
     .membro-content {
