@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 /* Reset básico */
 * {
     margin: 0;
@@ -16,11 +17,11 @@
 }
 
 html {
-    background-image: url(/images/background3.png);
     font-family: "Roboto", sans-serif;
     color: var(--cor_fonte);
     font-size: 10px;
 }
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -80,6 +81,7 @@ body {
     color: white;
     cursor: pointer;
 }
+
 /* INÍCIO DO FORMULÁRIO */
 main {
     display: flex;
@@ -87,14 +89,16 @@ main {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    letter-spacing: 2px;
+    background-color: var(--cor_principal);
 }
+
 .contact-container {
     display: flex;
     width: 100%;
     max-width: 1400px;
     height: 100%;
     background-color: white;
-    box-shadow: var(--sombra-leve);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -107,44 +111,51 @@ main {
     align-items: center;
     flex-direction: column;
 }
-.illustration h2{
+
+.illustration h2 {
     font-size: 28px;
     color: #eef9e6;
-
 }
-.illustration p{
+
+.illustration p {
     font-size: 20px;
     color: #eef9e6;
     margin: 15px;
     text-align: center;
     padding: 0 10px;
 }
+
 .illustration img {
     max-width: 50%;
     height: auto;
     border-radius: 8px;
 }
-.illustration .contatos h3{
+
+.illustration .contatos h3 {
     font-size: 18px;
-    color:#F3FCE7;
+    color: #F3FCE7;
     text-align: center;
     margin-bottom: 24px;
 }
-.illustration .contatos .icones{
+
+.illustration .contatos .icones {
     display: flex;
     text-align: center;
     align-items: center;
 }
-.illustration .contatos .icones i{
+
+.illustration .contatos .icones i {
     color: #fff;
     font-size: 32px;
     margin: 10px 10px;
 }
-.illustration .contatos .icones a{
+
+.illustration .contatos .icones a {
     font-size: 14px;
-    color:white;
+    color: white;
     text-decoration: none;
 }
+
 .form-container {
     flex: 1;
     padding: 40px;
@@ -210,8 +221,9 @@ main {
 .submit-btn:hover {
     background-color: var(--verde-escuro);
 }
+
 @media (max-width: 768px) {
-    body{
+    body {
         margin: 0;
         padding: 0;
         width: 100%;
@@ -222,17 +234,17 @@ main {
     .topo-site {
         padding: 10px 20px;
     }
-    .topo-site img{
+    .topo-site img {
         width: 150px;
     }
-    .container .menu-toggle{
+    .container .menu-toggle {
         display: block;
         color: #E0E0E0;
         font-size: 2.3rem;
         background: none;
         border: none;
     }
-    .menu-toggle:focus{
+    .menu-toggle:focus {
         outline: none;
     }
     .navbar ul {
@@ -254,13 +266,80 @@ main {
         display: flex;
         border-bottom: 5px solid #fff;
     }
-    .navbar ul li a{
+    .navbar ul li a {
         margin: 10px 0;
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: color 0.3s ease;
-        
     }
     /* Fim Menu */
+    
+    /* Ajustes para o formulário */
+    .contact-container {
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+    .contact-main{
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    .contact-section{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding: 0;
+        
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+
+    }
+    .illustration{
+        width: 100%;
+    }
+   
+    .illustration img {
+        max-width: 70%;
+    }
+
+    .illustration h2 {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    .illustration p {
+        font-size: 16px;
+    }
+
+    .illustration .contatos .icones i {
+        font-size: 28px;
+    }
+    .icones{
+        display: flex;
+        flex-direction: column;
+        padding:0 20px 20px; 
+    }
+    .icones a{
+        font-size: 12px;
+    }
+    .contatos h3{
+        
+    }
 }
