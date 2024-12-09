@@ -302,8 +302,8 @@ transform: scale(1.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: start;
     align-items: center;
-    min-width: 320px;
-    letter-spacing: 2px;
+    min-width: 310px;
+    
 }
   
   .diferenciais li:hover {
@@ -526,7 +526,6 @@ footer {
         width: auto;
     }
     .diferenciais ul li{
-        width:auto;
-       
+
     }
 }
