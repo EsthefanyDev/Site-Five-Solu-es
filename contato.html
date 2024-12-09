@@ -24,13 +24,8 @@
                         <li><a href="./contato.html"
                                 class="active">Contato</a></li>
                     </ul>
-                    <!-- Menu hambúrguer -->
-                    <div class="hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
                 </nav>
+                <button class="menu-toggle" aria-label="Abrir menu">☰</button>
             </div>
         </header>
 
@@ -75,6 +70,20 @@
                 </div>
             </section>
         </main>
+
+
+        <!-- JavaScript para o menu hambúrguer -->
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+     const menuToggle = document.querySelector(".menu-toggle");
+     const navbar = document.querySelector(".navbar ul");
+ 
+     menuToggle.addEventListener("click", () => {
+         navbar.classList.toggle("active");
+     });
+ });
+ 
+     </script>
         
     </body>
 </html>
