@@ -499,8 +499,11 @@ footer {
         overflow-x: hidden;
     }
     .intro-servicos{
-        padding: 20px 10px;
+        padding: 20px;
         height: auto;
+    }
+    .intro-destaque ul li{
+        font-size: 16px;
     }
     .intro-servicos .intro-grid .intro-texto h2{
         line-height: 1.2;
@@ -525,7 +528,5 @@ footer {
     .diferenciais ul {
         width: auto;
     }
-    .diferenciais ul li{
-
-    }
+   
 }
