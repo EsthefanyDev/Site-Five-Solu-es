@@ -298,6 +298,7 @@ ion-icon{
 /* INÍCIO "NOSSOS VALORES" */
 .valores {
     position: relative;
+    display: grid;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -306,7 +307,7 @@ ion-icon{
 }
 
 .valores h2 {
-    width: 310px;
+    width: 350px;
     font-size: var(--fonte-titulo-principal);
     color: var(--cor_principal);
     text-shadow: 3px 2px 0 var(--verde);
